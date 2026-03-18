@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sitemap - Life on Land</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .sitemap-container {
+            margin-top: 100px;
+            padding: 40px 20px;
+            color: white;
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .sitemap-container h1 {
+            color: #D3ECCD;
+            margin-bottom: 30px;
+        }
+
+        .svg-container {
+            width: 100%;
+            max-width: 1000px;
+            margin: 0 auto;
+            background: rgba(0, 0, 0, 0.4);
+            border-radius: 12px;
+            padding: 20px;
+            overflow-x: auto;
+        }
+
+        /* SVG Specific Styling */
+        .node-rect {
+            fill: #333;
+            stroke: #0FB855;
+            stroke-width: 2;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+
+        .node-group:hover .node-rect,
+        .node-group:focus .node-rect {
+            fill: #0FB855;
+            stroke: #fff;
+            stroke-width: 3;
+        }
+
+        .node-text {
+            fill: #D3ECCD;
+            font-family: Arial, sans-serif;
+            font-size: 16px;
+            font-weight: bold;
+            text-anchor: middle;
+            dominant-baseline: middle;
+            pointer-events: none;
+            transition: fill 0.3s ease;
+        }
+
+        .node-group:hover .node-text,
+        .node-group:focus .node-text {
+            fill: #fff;
+        }
+
+        .link-line {
+            stroke: #0FB855;
+            stroke-width: 2;
+        }
+
+        .node-group {
+            outline: none;
+        }
+
+        footer {
+            margin-top: 50px;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.7);
+            text-align: center;
+            color: #fff;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        footer a {
+            color: #D3ECCD;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        footer p {
+            margin-top: 10px;
+            font-size: 14px;
+            color: #aaa;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="left-part">
+            <img src="images/logo.png" alt="logo" class="logo">
+        </div>
+        <div class="right-part">
+            <nav>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="action-impact.html">Action Impact</a></li>
+                    <li><a href="sitemap.html" style="background: #0FB855;">Sitemap</a></li>
+                    <li><a href="userProfile.html">Profile</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="sitemap-container">
+            <h1>Website Sitemap</h1>
+            <p style="margin-bottom: 20px;">Use the visual map below to navigate the Life on Land project.</p>
+
+            <div class="svg-container">
+                <svg viewBox="0 0 1000 500" width="100%" height="auto" xmlns="http://www.w3.org/2000/svg"
+                    role="navigation" aria-label="Visual Sitemap">
+
+                    <!-- Root Line -->
+                    <path class="link-line" d="M 500 100 L 500 150" fill="none" />
+
+                    <!-- Parent to Child Connecting Lines -->
+                    <path class="link-line" d="M 150 150 L 850 150" fill="none" />
+
+                    <path class="link-line" d="M 150 150 L 150 200" fill="none" />
+                    <path class="link-line" d="M 290 150 L 290 200" fill="none" />
+                    <path class="link-line" d="M 430 150 L 430 200" fill="none" />
+                    <path class="link-line" d="M 570 150 L 570 200" fill="none" />
+                    <path class="link-line" d="M 710 150 L 710 200" fill="none" />
+                    <path class="link-line" d="M 850 150 L 850 200" fill="none" />
+
+                    <path class="link-line" d="M 500 250 L 500 300" fill="none" />
+                    <path class="link-line" d="M 400 300 L 600 300" fill="none" />
+
+                    <path class="link-line" d="M 400 300 L 400 350" fill="none" />
+                    <path class="link-line" d="M 600 300 L 600 350" fill="none" />
+
+
+                    <!-- Parent Nodes -->
+                    <!-- Splash / Landing -->
+                    <a href="splash.html" tabindex="0" class="node-group" aria-label="Go to Splash Page">
+                        <title>Splash Page</title>
+                        <rect x="420" y="50" width="160" height="50" rx="10" class="node-rect" />
+                        <text x="500" y="75" class="node-text">Splash Screen</text>
+                    </a>
+
+                    <!-- Sub Nodes Layer 1 -->
+                    <!-- Home -->
+                    <a href="home.html" tabindex="0" class="node-group" aria-label="Go to Home Page">
+                        <title>Home Page</title>
+                        <rect x="70" y="200" width="160" height="50" rx="10" class="node-rect" />
+                        <text x="150" y="225" class="node-text">Home</text>
+                    </a>
+
+                    <!-- Gallery -->
+                    <a href="gallery.html" tabindex="0" class="node-group" aria-label="Go to Gallery Page">
+                        <title>Gallery Page</title>
+                        <rect x="210" y="200" width="160" height="50" rx="10" class="node-rect" />
+                        <text x="290" y="225" class="node-text">Gallery</text>
+                    </a>
+
+                    <!-- Action Impact -->
+                    <a href="action-impact.html" tabindex="0" class="node-group" aria-label="Go to Action Impact Page">
+                        <title>Action Impact Page</title>
+                        <rect x="350" y="200" width="160" height="50" rx="10" class="node-rect" />
+                        <text x="430" y="225" class="node-text">Action Impact</text>
+                    </a>
+
+                    <!-- Feedback -->
+                    <a href="feedback.html" tabindex="0" class="node-group" aria-label="Go to Feedback Page">
+                        <title>Feedback Page</title>
+                        <rect x="490" y="200" width="160" height="50" rx="10" class="node-rect" />
+                        <text x="570" y="225" class="node-text">Feedback</text>
+                    </a>
+
+                    <!-- Team -->
+                    <a href="team.html" tabindex="0" class="node-group" aria-label="Go to Team Page">
+                        <title>Team Page</title>
+                        <rect x="630" y="200" width="160" height="50" rx="10" class="node-rect" />
+                        <text x="710" y="225" class="node-text">Team</text>
+                    </a>
+
+                    <!-- User Profile -->
+                    <a href="userProfile.html" tabindex="0" class="node-group" aria-label="Go to User Profile Page">
+                        <title>User Profile Page</title>
+                        <rect x="770" y="200" width="160" height="50" rx="10" class="node-rect" />
+                        <text x="850" y="225" class="node-text">User Profile</text>
+                    </a>
+
+                    <!-- Sub Nodes Layer 2 (Content pages linked to Action Impact for example, or separate) -->
+                    <!-- Content Page 1 -->
+                    <a href="content1.html" tabindex="0" class="node-group" aria-label="Go to Content Page 1">
+                        <title>Content Page 1</title>
+                        <rect x="320" y="350" width="160" height="50" rx="10" class="node-rect" />
+                        <text x="400" y="375" class="node-text">Content - Flora</text>
+                    </a>
+
+                    <!-- Content Page 2 -->
+                    <a href="content2.html" tabindex="0" class="node-group" aria-label="Go to Content Page 2">
+                        <title>Content Page 2</title>
+                        <rect x="520" y="350" width="160" height="50" rx="10" class="node-rect" />
+                        <text x="600" y="375" class="node-text">Content - Fauna</text>
+                    </a>
+
+                </svg>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <a href="pageEditor_student4.html">Page Editor</a> |
+        <a href="validation_student4.html">Validation Page</a>
+        <p>Created by Student 4 | Web Design and Development | Life on Land</p>
+    </footer>
+
+</body>
+
+</html>

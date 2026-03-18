@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile - Life on Land</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .profile-container {
+            margin-top: 120px;
+            padding: 20px;
+            color: white;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+            font-family: Arial, Helvetica, sans-serif;
+            background: rgba(0, 0, 0, 0.6);
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+        }
+
+        .profile-container h1 {
+            color: #D3ECCD;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+
+        .profile-container>p {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .progress-wrapper {
+            margin-bottom: 30px;
+        }
+
+        .progress-text {
+            font-weight: bold;
+            margin-bottom: 5px;
+            color: #0FB855;
+        }
+
+        .progress-container {
+            width: 100%;
+            background-color: #444;
+            border-radius: 12px;
+            overflow: hidden;
+        }
+
+        .progress-bar {
+            width: 0%;
+            height: 24px;
+            background-color: #0FB855;
+            text-align: center;
+            color: white;
+            line-height: 24px;
+            transition: width 0.5s ease-in-out;
+            font-weight: bold;
+        }
+
+        .profile-output {
+            background-color: #2b2b2b;
+            padding: 20px;
+            border-radius: 12px;
+            display: none;
+            margin-top: 30px;
+        }
+
+        .profile-output h2 {
+            color: #D3ECCD;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #0FB855;
+            padding-bottom: 10px;
+        }
+
+        .profile-section {
+            margin-bottom: 15px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid #555;
+            display: none;
+        }
+
+        .profile-section:last-child {
+            border-bottom: none;
+        }
+
+        .profile-section h3 {
+            color: #0FB855;
+            margin-bottom: 10px;
+        }
+
+        .profile-section p {
+            margin-bottom: 8px;
+            font-size: 15px;
+        }
+
+        .profile-section p strong {
+            display: inline-block;
+            width: 180px;
+            color: #aaa;
+        }
+
+        .btn {
+            background-color: #0FB855;
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 12px;
+            cursor: pointer;
+            font-weight: bold;
+            font-size: 16px;
+            margin: 10px 5px;
+            transition: background 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #0A9442;
+        }
+
+        .btn-container {
+            text-align: center;
+        }
+
+        footer {
+            margin-top: 50px;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.7);
+            text-align: center;
+            color: #fff;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        footer a {
+            color: #D3ECCD;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        footer p {
+            margin-top: 10px;
+            font-size: 14px;
+            color: #aaa;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="left-part">
+            <img src="images/logo.png" alt="logo" class="logo">
+        </div>
+        <div class="right-part">
+            <nav>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="action-impact.html">Action Impact</a></li>
+                    <li><a href="sitemap.html">Sitemap</a></li>
+                    <li><a href="userProfile.html" style="background: #0FB855;">Profile</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="profile-container">
+            <h1>Create Your Profile</h1>
+            <p>Tell us more about yourself and your connection to Life on Land conservation. Follow the prompts to build
+                your profile.</p>
+
+            <div class="progress-wrapper" style="display: none;" id="progress-wrapper">
+                <p class="progress-text" id="progress-text">Profile Completion: 0%</p>
+                <div class="progress-container">
+                    <div class="progress-bar" id="progress-bar">0%</div>
+                </div>
+            </div>
+
+            <div class="btn-container">
+                <button id="start-btn" class="btn" onclick="startProfileBuilding()">Start Profile Building</button>
+                <button id="resume-btn" class="btn" style="display: none;" onclick="resumeSkippedSteps()">Complete
+                    Skipped Steps</button>
+            </div>
+
+            <div class="profile-output" id="profile-output">
+                <h2>User Profile Summary</h2>
+
+                <div class="profile-section" id="section-1">
+                    <h3>Step 1: Personal Details</h3>
+                    <p id="p-name"><strong>Full Name:</strong> <span id="out-name"></span></p>
+                    <p id="p-username"><strong>Username:</strong> <span id="out-username"></span></p>
+                    <p id="p-role"><strong>Role:</strong> <span id="out-role"></span></p>
+                </div>
+
+                <div class="profile-section" id="section-2">
+                    <h3>Step 2: Interests & Preferences</h3>
+                    <p id="p-animal"><strong>Favorite Animal:</strong> <span id="out-animal"></span></p>
+                    <p id="p-habitat"><strong>Preferred Habitat:</strong> <span id="out-habitat"></span></p>
+                    <p id="p-topic"><strong>Conservation Focus:</strong> <span id="out-topic"></span></p>
+                </div>
+
+                <div class="profile-section" id="section-3">
+                    <h3>Step 3: Actions & Goals</h3>
+                    <p id="p-action"><strong>Recent Action Taken:</strong> <span id="out-action"></span></p>
+                    <p id="p-goal"><strong>Conservation Goal:</strong> <span id="out-goal"></span></p>
+                    <p id="p-volunteer"><strong>Volunteer Interest:</strong> <span id="out-volunteer"></span></p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <a href="pageEditor_student4.html">Page Editor</a> |
+        <a href="validation_student4.html">Validation Page</a>
+        <p>Created by Student 4 | Web Design and Development | Life on Land</p>
+    </footer>
+
+    <script>
+        const profileData = {
+            step1: { name: null, username: null, role: null },
+            step2: { animal: null, habitat: null, topic: null },
+            step3: { action: null, goal: null, volunteer: null }
+        };
+
+        const promptsConfig = [
+            {
+                step: 1,
+                title: "Personal Details",
+                questions: [
+                    { key: 'name', text: "What is your full name?" },
+                    { key: 'username', text: "Choose a username for your profile:" },
+                    { key: 'role', text: "What is your role? (e.g. Student, Activist, Guest)" }
+                ]
+            },
+            {
+                step: 2,
+                title: "Interests & Preferences",
+                questions: [
+                    { key: 'animal', text: "What is your favorite land animal?" },
+                    { key: 'habitat', text: "What is your preferred habitat to explore (e.g. Forest, Desert, Mountains)?" },
+                    { key: 'topic', text: "Which conservation topic interests you the most?" }
+                ]
+            },
+            {
+                step: 3,
+                title: "Actions & Goals",
+                questions: [
+                    { key: 'action', text: "What recent action have you taken to support the environment?" },
+                    { key: 'goal', text: "What is your primary conservation goal for the upcoming year?" },
+                    { key: 'volunteer', text: "Would you like to volunteer with us? (Yes/No)" }
+                ]
+            }
+        ];
+
+        function updateProgress() {
+            let answered = 0;
+            const totalQuestions = 9;
+
+            // Check Step 1
+            let s1 = 0;
+            if (profileData.step1.name) s1++;
+            if (profileData.step1.username) s1++;
+            if (profileData.step1.role) s1++;
+            answered += s1;
+            if (s1 > 0) document.getElementById("section-1").style.display = "block";
+
+            // Check Step 2
+            let s2 = 0;
+            if (profileData.step2.animal) s2++;
+            if (profileData.step2.habitat) s2++;
+            if (profileData.step2.topic) s2++;
+            answered += s2;
+            if (s2 > 0) document.getElementById("section-2").style.display = "block";
+
+            // Check Step 3
+            let s3 = 0;
+            if (profileData.step3.action) s3++;
+            if (profileData.step3.goal) s3++;
+            if (profileData.step3.volunteer) s3++;
+            answered += s3;
+            if (s3 > 0) document.getElementById("section-3").style.display = "block";
+
+            // Progress Bar Update
+            let percent = Math.round((answered / totalQuestions) * 100);
+            const pb = document.getElementById("progress-bar");
+            pb.style.width = percent + "%";
+            pb.innerText = percent + "%";
+
+            document.getElementById("progress-text").innerText = `Profile Completion: ${percent}%`;
+
+            if (answered > 0) {
+                document.getElementById("profile-output").style.display = "block";
+                document.getElementById("progress-wrapper").style.display = "block";
+            }
+
+            // Button visibility based on completion
+            if (answered < totalQuestions) {
+                document.getElementById("resume-btn").style.display = "inline-block";
+            } else {
+                document.getElementById("resume-btn").style.display = "none";
+            }
+
+            if (percent === 100) {
+                document.getElementById("start-btn").style.display = "none";
+            }
+        }
+
+        function updateOutput() {
+            const map = {
+                'name': 'out-name', 'username': 'out-username', 'role': 'out-role',
+                'animal': 'out-animal', 'habitat': 'out-habitat', 'topic': 'out-topic',
+                'action': 'out-action', 'goal': 'out-goal', 'volunteer': 'out-volunteer'
+            };
+
+            for (let step in profileData) {
+                for (let key in profileData[step]) {
+                    let textEl = document.getElementById(map[key]);
+                    let parentEl = document.getElementById("p-" + key);
+
+                    if (profileData[step][key] !== null) {
+                        textEl.innerText = profileData[step][key];
+                        parentEl.style.display = "block";
+                    } else {
+                        parentEl.style.display = "none"; // Hide skipped questions
+                    }
+                }
+            }
+        }
+
+        function runStep(stepIndex) {
+            if (stepIndex >= promptsConfig.length) {
+                updateProgress();
+                updateOutput();
+                return;
+            }
+
+            let stepObj = promptsConfig[stepIndex];
+            let confirmStep = confirm(`--- Step ${stepIndex + 1}: ${stepObj.title} ---\nWould you like to complete this section now? (Click Cancel to skip entire step)`);
+
+            if (confirmStep) {
+                for (let q of stepObj.questions) {
+                    let stepKey = 'step' + (stepIndex + 1);
+                    if (profileData[stepKey][q.key] === null) {
+                        let ans = prompt(q.text + "\n(Leave blank or click Cancel to skip)");
+                        if (ans !== null && ans.trim() !== "") {
+                            profileData[stepKey][q.key] = ans.trim();
+                        }
+                    }
+                }
+            }
+
+            updateProgress();
+            updateOutput();
+
+            // Proceed to next step with a slight delay
+            setTimeout(() => {
+                runStep(stepIndex + 1);
+            }, 300);
+        }
+
+        function startProfileBuilding() {
+            document.getElementById("start-btn").style.display = "none";
+            runStep(0);
+        }
+
+        function resumeSkippedSteps() {
+            let stepsResumed = false;
+            for (let i = 0; i < promptsConfig.length; i++) {
+                let stepObj = promptsConfig[i];
+                let stepKey = 'step' + (i + 1);
+
+                let hasSkipped = stepObj.questions.some(q => profileData[stepKey][q.key] === null);
+                if (hasSkipped) {
+                    let wantsToFill = confirm(`You have missing information in [Step ${i + 1}: ${stepObj.title}].\nDo you want to fill it in now?`);
+                    if (wantsToFill) {
+                        stepsResumed = true;
+                        for (let q of stepObj.questions) {
+                            if (profileData[stepKey][q.key] === null) {
+                                let ans = prompt(q.text + "\n(Leave blank or click Cancel to skip)");
+                                if (ans !== null && ans.trim() !== "") {
+                                    profileData[stepKey][q.key] = ans.trim();
+                                }
+                            }
+                        }
+                    }
+                    updateProgress();
+                    updateOutput();
+                }
+            }
+            if (!stepsResumed) {
+                alert("No skipped questions were updated at this time.");
+            }
+        }
+    </script>
+</body>
+
+</html>

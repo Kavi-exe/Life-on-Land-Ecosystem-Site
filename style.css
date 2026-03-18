@@ -181,3 +181,173 @@ nav li a:hover::after { /*animation after part*/
     transform: translate(-50%, -50%);
     width: 600px;
 }
+
+
+/* Background Image with Readability Overlay */
+.splash-container {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    /* Placeholder forest image - replace URL with your own local image if needed */
+    background: url('https://images.unsplash.com/photo-1511497584788-876760111969?q=80&w=2000&auto=format&fit=crop') no-repeat center center;
+    background-size: cover;
+    color: #ffffff;
+}
+
+/* Dark overlay to ensure text remains readable */
+.overlay {
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-color: rgba(15, 30, 15, 0.7); /* Deep dark green/black overlay */
+    z-index: 1;
+}
+
+/* Content wrapper to sit above the overlay */
+.content {
+    position: relative;
+    z-index: 2;
+    padding: 2rem;
+    max-width: 800px;
+}
+
+/* Website Title */
+h1 {
+    font-size: 4rem;
+    font-weight: 700;
+    color: #81c784; /* Earthy green tone */
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+/* Website Mission */
+.mission {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+    color: #e8f5e9;
+}
+
+/* Group Members */
+.team {
+    font-size: 1rem;
+    color: #a5d6a7;
+    margin-bottom: 3rem;
+    font-style: italic;
+}
+
+/* === CSS LOADER ANIMATION === */
+.loader {
+    border: 4px solid rgba(255, 255, 255, 0.2);
+    border-top: 4px solid #81c784; /* Green spinner */
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 1s linear infinite;
+    margin: 0 auto 1.5rem auto;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Countdown Timer Text */
+.countdown-text {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+}
+
+/* Skip Intro Button */
+.skip-btn {
+    background-color: transparent;
+    color: #ffffff;
+    border: 2px solid #81c784;
+    padding: 10px 24px;
+    font-size: 1rem;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.skip-btn:hover {
+background-color: #81c784;
+color: #000;
+}
+/* Rule 1: Simulator container layout using CSS Grid for responsiveness */
+.sim-grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Rule 2: Default Action Card styling */
+.sim-card {
+    background-color: rgba(255, 255, 255, 0.9);
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.2s, border-color 0.2s, box-shadow 0.2s;
+    color: #333;
+}
+
+/* Rule 3: Visual indication for Selected Cards */
+.sim-card.selected {
+    border: 3px solid #2e7d32; /* Dark green border */
+    background-color: #e8f5e9; /* Light green tint */
+    box-shadow: 0 4px 8px rgba(46, 125, 50, 0.4);
+    transform: scale(1.02);
+}
+
+/* Rule 4: Thumbnail image styling inside the cards */
+.sim-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 6px;
+    margin-bottom: 10px;
+}
+
+/* Rule 5: Feedback banner styling with dark overlay for readability */
+.sim-feedback-banner {
+    background-color: rgba(27, 94, 32, 0.85); /* Dark green semi-transparent */
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    max-width: 800px;
+    margin: 20px auto;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+}
+
+/* Rule 6: Dynamic background container handling */
+#simulator-main {
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    transition: background-image 0.8s ease-in-out;
+    padding-bottom: 40px;
+    /* Default Low Impact Background */
+    background-image: url('https://images.unsplash.com/photo-1473445730015-841f29a9490b?q=80&w=2000&auto=format&fit=crop'); /* Dry land */
+}
+
+/* Ensures text inside main stays readable regardless of background */
+.sim-content-wrapper {
+    background-color: rgba(255, 255, 255, 0.4); /* Light overlay */
+    padding-top: 20px;
+    min-height: 100vh;
+}

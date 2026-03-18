@@ -6,7 +6,7 @@
 
 
 body {  /*body changes*/
-    background-color: #212121;
+    background-color: #ffffff;
     height: 5000px;
 }
 
@@ -78,18 +78,45 @@ nav li a { /*nav bar changes*/
 }
 
 
-nav li a:hover { /*hover effect for nav bar*/
-    background: #E67514;
-    transition: 500ms;
+nav li a { /* nav bar changes */
+
+    display: block;
+    color: #D3ECCD;
+    font-size: 14px;
+    text-decoration: none;
+    font-weight: bold;
+    float: right;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 14px;
+    padding-right: 14px;
+    border-radius: 12px;
+
+    position: relative;
 }
 
+nav li a::after {  /*animated underline*/
+
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 0%;
+    height: 2px;
+    background-color: #2e7d32;
+    transition: width 0.4s ease;
+}
+
+nav li a:hover::after { /*animation after part*/
+    width: 100%;
+}
 
 .background-image { /*background image changes*/
     position: relative;
     margin-top: 80px;
     width: 100%;
     height: auto;
-    filter: blur(2px);
+    
 }
 
 
@@ -97,7 +124,7 @@ nav li a:hover { /*hover effect for nav bar*/
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 40px;
+    gap: 30px;
     width: 100%;
     height: 500px;
     overflow: hidden;
@@ -108,28 +135,29 @@ nav li a:hover { /*hover effect for nav bar*/
 
 
 .gallery_img { /*image changes*/
-    width: 300px;
-    height: 380px;
+    width: 240px;
+    height: 320px;
     border-radius: 20px;
-    transition: transform 1.5s ease;
+    transition: transform 0.4s ease;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .gallery_img:hover { /*image on hover changes*/
-    transform: scale(1.2);
-    transition: transform 1000ms ease;
-    transition-delay: 100ms;
+    transform: scale(1.08);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+    transition-delay: 10ms;
+    cursor: pointer;
     
 }
 
 .class_name { /*class name "Gallery" changes*/
-    color: #E67514;
-    margin-top: 50px;
+    color: #ff7b00;
     text-align: center;
     font-size: 50px;
     font-weight: bold;
     font-family: 'Times New Roman', Times, serif;
-    stroke-width: 2px;
-    text-shadow: 2px 2px 4px rgb(0, 0, 0);
+    text-shadow: 3px 2px 6px  rgb(0, 0, 0);
+    margin-bottom: -50px;
 }
 
 
@@ -143,7 +171,7 @@ nav li a:hover { /*hover effect for nav bar*/
     font-size: 24px;
     font-weight: bold;
     stroke-width: 2px;
-    text-shadow: 2px 2px 4px rgba(0, 255, 251, 0.353);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.353);
 }
 
 .logo_on_home { /*logo on home page changes*/
@@ -153,4 +181,3 @@ nav li a:hover { /*hover effect for nav bar*/
     transform: translate(-50%, -50%);
     width: 600px;
 }
-

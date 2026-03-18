@@ -133,7 +133,7 @@ nav li a:hover { /*hover effect for nav bar*/
     text-align: center;
     font-size: 50px;
     font-weight: bold;
-    font-family: my-font;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
     stroke-width: 2px;
     text-shadow: 2px 2px 4px rgb(0, 0, 0);
 }

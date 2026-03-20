@@ -346,6 +346,7 @@ background-size: cover;
 background-position: center;
 background-attachment: fixed;
 color: white;
+animation: zoomBg 20s ease-in;
 }
 
 .space{
@@ -354,7 +355,7 @@ color: white;
 
 .program-section {
     background: rgba(0, 0, 0, 0.201);
-    padding: 20px;
+    padding: 10px;
     border-radius: 10px;
     margin-bottom: 30px;
 }

@@ -1,26 +1,34 @@
- // 1. Countdown Timer Logic
-        let timeLeft = 4;
-        const countdownDisplay = document.getElementById('countdown-display');
-        
-        const countdownInterval = setInterval(() => {
-            timeLeft--;
-            if (timeLeft > 0) {
-                countdownDisplay.textContent = `Entering site in ${timeLeft}...`;
-            } else {
-                countdownDisplay.textContent = "Loading...";
-                clearInterval(countdownInterval);
-            }
-        }, 1000);
+let timeLeft = 4;
+const countdownDisplay = document.getElementById('countdown-display');
+const splash = document.getElementById('splash');
+const mainContent = document.getElementById('main-content');
+const skipBtn = document.getElementById('skip-btn');
 
-        // 2. Skip Intro Button Logic
-        const skipBtn = document.getElementById('skip-btn');
-        skipBtn.addEventListener('click', () => {
-            // Optional but recommended: Remove the meta tag so it doesn't try to redirect twice
-            const metaTag = document.getElementById('meta-redirect');
-            if (metaTag) {
-                metaTag.remove(); 
-            }
-            
-            // Redirect immediately to Home Page
-            window.location.href = 'home.html';
-        });
+// FUNCTION TO ENTER SITE
+function enterSite() {
+    splash.style.opacity = "0";
+
+    setTimeout(() => {
+        splash.style.display = "none";
+        mainContent.style.display = "block";
+    }, 500);
+}
+
+// COUNTDOWN
+const countdownInterval = setInterval(() => {
+    timeLeft--;
+
+    if (timeLeft > 0) {
+        countdownDisplay.textContent = `Entering site in ${timeLeft}...`;
+    } else {
+        countdownDisplay.textContent = "Loading...";
+        clearInterval(countdownInterval);
+        enterSite(); // 🔥 AUTO ENTER AFTER COUNTDOWN
+    }
+}, 1000);
+
+// SKIP BUTTON
+skipBtn.addEventListener('click', () => {
+    clearInterval(countdownInterval); // stop countdown
+    enterSite(); // go immediately
+});

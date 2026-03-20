@@ -13,6 +13,19 @@
     animation: zoomBg 25s ease-in;
 }
 
+
+@keyframes zoomBg {
+  0% {
+    background-size: 100%;
+  }
+  50% {
+    background-size: 110%;
+  }
+  100% {
+    background-size: 100%;
+  }
+}
+
 #splash::after {
     content: "";
     position: absolute;
@@ -27,9 +40,7 @@
     100% { transform: translateX(80%); }
 }
 
-#main-content {
-    display: none;
-}
+
 
 
 .splash-content h1 {

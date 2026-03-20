@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Life on Land | Feedback</title>
+<link rel="stylesheet" href="style.css">
+
+
+</head>
+
+<body class="bgimg">
+
+ <header>        
+            
+
+   <div class="left-part">
+                <h1 class="nav_logo">Land Verse</h1>
+            </div>
+  
+  <div class="right-part">
+    <nav>
+      <ul>
+        <li><a href = "home.html">Home</a></li>
+        <li><a href = "#gallery">Gallery</a></li>
+        <li><a href = "#action-impact">Action Impact</a></li>
+        <li><a href = "feedback.html">Feedback</a></li>
+        <li><a href = "team.html">Team</a></li>
+      </ul>
+    
+    </nav>
+  </div>
+</header>
+
+
+<main class="space">
+
+<!-- PROGRAM DIRECTORY -->
+<section class="program-section">
+    <h2>Explore Programs</h2>
+
+    <select>
+        <option>Most Popular</option>
+        <option>Nearest</option>
+        <option>Student-Friendly</option>
+    </select><br>
+    <br>
+    <br>
+
+    <div class="program-container">
+
+        <div class="card">
+            <img src="images/background.jpg" alt="Forest conservation">
+            <h3>Forest Conservation</h3>
+            <p>Protect forests and ecosystems.</p>
+            <button>Join</button>
+        </div>
+
+        <div class="card">
+            <img src="images/Tree planting.jpg" alt="Tree planting">
+            <h3>Tree Planting</h3>
+            <p>Plant trees in your community.</p>
+            <button>Get Involved</button>
+        </div>
+
+        <div class="card">
+            <img src="images/Wildlifeprotection.jpg" alt="Wildlife protection">
+            <h3>Wildlife Protection</h3>
+            <p>Protect endangered species.</p>
+            <button>Learn More</button>
+        </div>
+
+        <div class="card">
+            <img src="images/ECO campaign.jpg" alt="Eco campaign">
+            <h3>Eco Campaign</h3>
+            <p>Raise awareness for nature.</p>
+            <button>Join</button>
+        </div>
+
+    </div>
+</section>
+
+<!-- REVIEWS -->
+<section class="reviews">
+    <h2>⭐ 8.6/10 Excellent (120 Reviews)</h2>
+
+    <div class="review-card">
+        <h4>Amazing Experience</h4>
+        <p>Great program... <a href="#">See more</a></p>
+        <small>John - 2026</small>
+        <p>Rating: 9/10</p>
+    </div>
+
+    <div class="review-card">
+        <h4>Very Helpful</h4>
+        <p>Learned a lot... <a href="#">See more</a></p>
+        <small>Amal - 2026</small>
+        <p>Rating: 8/10</p>
+    </div>
+
+    <div class="review-card">
+        <h4>Good Initiative</h4>
+        <p>Nice project... <a href="#">See more</a></p>
+        <small>Sara - 2026</small>
+        <p>Rating: 8.5/10</p>
+    </div>
+</section>
+
+<!-- FEEDBACK FORM -->
+<section>
+    <h2>Submit Feedback</h2>
+
+    <form id="form">
+
+    <fieldset>
+      <legend>Personal Details</legend>
+
+      <label>Full Name</label>
+      <input type="text" id="name">
+      <div class="error" id="nameError"></div>
+
+      <label>Email</label>
+      <input type="email" id="email">
+      <div class="error" id="emailError"></div>
+
+      <label>Telephone</label>
+      <input type="tel">
+
+      <label>Address</label>
+      <textarea></textarea>
+    </fieldset>
+
+    <fieldset>
+      <legend>Feedback Details</legend>
+
+      <label>Program</label>
+      <select>
+          <option>Forest Conservation</option>
+          <option>Tree Planting</option>
+      </select>
+
+      <label>Message</label>
+      <textarea id="message" maxlength="150"></textarea>
+      <small id="counter">150 characters remaining<br><br></small>
+
+      
+
+      <label>Date & Time</label>
+      <input type="datetime-local">
+    </fieldset>
+
+    <button type="submit">Send Feedback</button>
+
+    </form>
+
+    <p id="successMsg"></p>
+
+</section>
+
+</main>
+
+<footer>
+    <p>© 2026 Life on Land | Page Editor | Validation</p>
+</footer>
+
+<script>
+/* CHARACTER COUNTER */
+const message = document.getElementById("message");
+const counter = document.getElementById("counter");
+
+message.addEventListener("input", () => {
+    counter.textContent = (150 - message.value.length) + " characters remaining";
+});
+
+/* SIMPLE VALIDATION */
+document.getElementById("form").addEventListener("submit", function(e){
+    e.preventDefault();
+
+    let valid = true;
+
+    let name = document.getElementById("name");
+    let email = document.getElementById("email");
+
+    document.getElementById("nameError").textContent = "";
+    document.getElementById("emailError").textContent = "";
+
+    if(name.value === ""){
+        document.getElementById("nameError").textContent = "Name required";
+        valid = false;
+    }
+
+    if(email.value === ""){
+        document.getElementById("emailError").textContent = "Email required";
+        valid = false;
+    }
+
+    if(valid){
+        document.getElementById("successMsg").textContent = "✅ Thank you for your feedback!";
+        this.reset(); // optional: reset form after submit
+        counter.textContent = "150 characters remaining";
+    }
+});
+</script>
+
+</body>
+</html>

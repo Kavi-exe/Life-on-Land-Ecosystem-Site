@@ -110,7 +110,7 @@ header {  /*header changes*/
 }
 
 
-.nav_logo {
+.nav_logo { /*nav bar logo changes*/
     color: white;
     font-size: 22px;
     font-family: 'f1';
@@ -118,6 +118,7 @@ header {  /*header changes*/
     margin-left: 20px;
     text-align: center;
     letter-spacing: 1px;
+    cursor: pointer;
 }
 
 nav ul { /*nav bar changes*/

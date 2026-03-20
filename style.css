@@ -10,6 +10,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
 }
 
 html {
@@ -22,64 +23,10 @@ html {
 
 body {  /*body changes*/
     background-color: #000000;
-}
-
-#home {
-    background-image: url("images/background.jpg");
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
-    width: 100%;
-    animation: zoomBg 15s ease-in;
+    margin-top: 80px;
 }
 
 
-@keyframes zoomBg {
-  0% {
-    background-size: 100%;
-  }
-  50% {
-    background-size: 110%;
-  }
-  100% {
-    background-size: 100%;
-  }
-}
-
-
-#home h1 {
-    font-family: 'f1';
-    font-size: 100px;
-    color: #ffffff;
-    text-align: center;
-    padding-top: 300px;
-}
-
-
-.image_txt{ /*image text changes*/
-    display: flex;
-    position: absolute;
-    top: 56%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    font-family: 'f1';
-    font-size: 24px;
-    stroke-width: 2px;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.353);
-    letter-spacing: 1.5px;
-    
-}
-
-.background_logo { /*logo on home page changes*/
-    font-family: 'f1';
-    font-size: 100px;
-    color: #ffffff;
-    text-align: center;
-    padding-top: 300px;
-    letter-spacing: 4px;
-    
-}
 
 header {  /*header changes*/
     display: flex;
@@ -131,8 +78,7 @@ nav ul { /*nav bar changes*/
 
 nav li { /*nav bar changes*/
     font-family: Arial, Helvetica, sans-serif;
-    padding: 10px;
-    
+    padding: 8px;
 }
 
 
@@ -171,78 +117,9 @@ nav li a:hover::after { /*animation after part*/
     width: 100%;
 }
 
-.background-image { /*background image changes*/
-    position: relative;
-    margin-top: 80px;
-    width: 100%;
-    height: auto;
-    
+.active {
+    color: #0A9442;
 }
-
-
-#image-holder {  /*image holder changes*/
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 30px;
-    width: 100%;
-    height: 500px;
-    overflow: hidden;
-    transition: 500ms;
-    padding: 25px;
-    
-}
-
-
-.gallery_img { /*image changes*/
-    width: 240px;
-    height: 320px;
-    border-radius: 20px;
-    transition: transform 0.4s ease;
-
-}
-
-.gallery_img:hover { /*image on hover changes*/
-    transform: scale(1.08);
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
-    transition-delay: 10ms;
-    cursor: pointer;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 100px 0 rgba(255, 255, 255, 0.314);
-    
-}
-
-.class_name { /*class name "Gallery" changes*/
-    color: #ffffff;
-    text-align: center;
-    font-size: 50px;
-    font-family: 'f1';
-    margin-bottom: -50px;
-    letter-spacing: 5px;
-    position: relative;
-    width: 100px;
-    left: 675px;
-}
-
-
-.class_name::after {  /*animated underline*/
-
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: -8px;
-    width: 0%;
-    height: 4px;
-    background-color: #ffffff7f;
-    transition: width 0.6s ease;
-}
-
-.class_name:hover::after { /*animation after part*/
-    width: 100%;
-}
-
-
-
-
 
 
 footer { /*footer styles*/
@@ -256,88 +133,6 @@ footer { /*footer styles*/
     letter-spacing: 3px;
     
 }
-
-
-
-/*--------------------sanuka--------------------*/
-
-
-#splash {
-    position: fixed;
-    width: 100%;
-    background-image: url(images/splash_bg.jpg);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 9999;
-    transition: opacity 0.5s ease;
-    background-position: center;
-    height: 100vh;
-    width: 100%;
-    animation: zoomBg 25s ease-in;
-}
-
-#splash::after {
-    content: "";
-    position: absolute;
-    width: 200%;
-    height: 100%;
-    background: linear-gradient(120deg, transparent, rgba(255,255,255,0.2), transparent);
-    animation: shine 5s infinite;
-}
-
-@keyframes shine {
-    0% { transform: translateX(-100%); }
-    100% { transform: translateX(80%); }
-}
-
-#main-content {
-    display: none;
-}
-
-
-.splash-content h1 {
-    font-family: 'f1';
-    font-size: 100px;
-    color: #ffffff;
-    text-align: center;
-    align-items: center;
-    letter-spacing: 4px;
-}
-
-#countdown-display {
-    color: #ffffff;
-    margin-bottom: 40px;
-    font-family: 'f1';
-    letter-spacing: 2px;
-    text-align: center;
-}
-
-.enter-btn {
-    align-items: center;
-    transition: 0.3s;
-    padding-left: 14px;
-    padding-right: 10px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    border-radius: 12px;
-    border: none;
-    background-color: #ffffff67;
-    color: rgb(255, 255, 255);
-    font-family: 'f1';
-    letter-spacing: 2.5px;
-    margin-left: 168px;
-    cursor: pointer;
-}
-
-.enter-btn:hover {
-    background-color: #0A9442;
-}
-
-
-
-
-
 
 
 

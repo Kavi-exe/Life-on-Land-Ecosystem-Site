@@ -1,0 +1,69 @@
+#home {
+    background-image: url("images/background.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 550px;
+    width: 100%;
+    animation: zoomBg 15s ease-in infinite;
+    
+}
+
+
+@keyframes zoomBg {
+  0% {
+    background-size: 100%;
+  }
+  50% {
+    background-size: 110%;
+  }
+  100% {
+    background-size: 100%;
+  }
+}
+
+
+.image_txt{ /*image text changes*/
+    display: flex;
+    position: static;
+    justify-content: center;
+    margin-top: -16px;
+    color: white;
+    font-family: 'f1';
+    font-size: 24px;
+    stroke-width: 2px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.353);
+    letter-spacing: 1.5px;
+    
+}
+
+.background_logo { /*logo on home page changes*/
+    font-family: 'f1';
+    font-size: 100px;
+    color: #ffffff;
+    text-align: center;
+    padding-top: 205px;
+    letter-spacing: 4px;
+    
+}
+
+.header {  /*header changes*/
+    display: flex;
+    position: fixed;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(0,0,0,0.7);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    z-index: 1000;
+}
+
+.background-image { /*background image changes*/
+    position: relative;
+    margin-top: 80px;
+    width: 100%;
+    height: auto;
+    
+}
+

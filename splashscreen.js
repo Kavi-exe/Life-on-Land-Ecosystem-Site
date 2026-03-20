@@ -1,4 +1,4 @@
-let timeLeft = 4;
+let timeLeft = 9;
 const countdownDisplay = document.getElementById('countdown-display');
 const splash = document.getElementById('splash');
 const mainContent = document.getElementById('main-content');
@@ -23,12 +23,12 @@ const countdownInterval = setInterval(() => {
     } else {
         countdownDisplay.textContent = "Loading...";
         clearInterval(countdownInterval);
-        enterSite(); // 🔥 AUTO ENTER AFTER COUNTDOWN
+        window.location.href = "home.html"; // 🔥 AUTO ENTER AFTER COUNTDOWN
     }
 }, 1000);
 
 // SKIP BUTTON
 skipBtn.addEventListener('click', () => {
     clearInterval(countdownInterval); // stop countdown
-    enterSite(); // go immediately
+    window.location.href = "home.html"; // go immediately
 });

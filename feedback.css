@@ -1,0 +1,192 @@
+/* Feebback page*/
+.bgimg{
+margin: 0;
+font-family: Arial, sans-serif;
+background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.8)),
+            url("images/background.jpg");
+background-size: cover;
+background-position: center;
+background-attachment: fixed;
+color: white;
+animation: zoomBg 15s ease-in infinite;
+    
+}
+   
+
+
+@keyframes zoomBg {
+  0% {
+    background-size: 100%;
+  }
+  50% {
+    background-size: 110%;
+  }
+  100% {
+    background-size: 100%;
+  }
+}
+
+.space{
+    margin-top: 100px;
+}
+
+.program-section {
+    background: rgba(0, 0, 0, 0.201);
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+/* SCROLLABLE */
+.program-container {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    padding-bottom: 10px;
+}
+
+/* CARDS */
+.card {
+    min-width: 250px;
+    width: 250px;
+    height: 350px;
+    background: #000000;
+    padding: 25px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    transition: transform 1.5s ease, box-shadow 0.3s ease;
+    box-sizing: border-box;
+}
+
+.card:hover {
+    transform: translateY(-20px);
+    box-shadow: 0 8px 15px rgba(0, 255, 55, 0.881);
+}
+
+/* IMAGE */
+.card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.card h3 {
+    margin: 5px 0;
+    text-align: center;
+}
+
+.card p {
+    text-align: center;
+    flex-grow: 1; /* pushes button down */
+}
+
+/* BUTTON INSIDE CARD */
+.card button {
+    margin-top: 20px;
+    padding: 10px;
+    width: 100%;
+    background: #4CAF50;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.card button:hover {
+    background: #25ff30;
+}
+
+/* DROPDOWN */
+select {
+    margin-bottom: 15px;
+    padding: 8px;
+}
+
+/* ===== REVIEWS ===== */
+.reviews {
+    background: rgba(0, 0, 0, 0.201);
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+.review-card {
+    background: #1b1b1b;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 8px;
+}
+
+/* ===== FORM (65% CENTERED) ===== */
+form {
+    background: rgba(0,0,0,0.7);
+    padding: 20px;
+    border-radius: 10px;
+    width: 55%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: transform 0.5s ease, box-shadow 0.3s ease;
+}
+form:hover {
+   transform: scale(1.05);
+    box-shadow: 0 8px 15px rgba(76, 175, 80, 0.5);
+}
+
+fieldset {
+    border: 4px solid #4CAF50;
+    margin-bottom: 15px;
+}
+
+
+legend {
+    color: #4CAF50;
+}
+
+input, textarea, select {
+    width: 97%;
+    padding: 8px;
+    margin: 8px 0;
+}
+
+button{
+color: black;
+background-color: #08b910;
+height:45px;
+}
+
+button:hover{
+color:rgb(0, 0, 0);
+background-color:#07f10f;
+cursor: pointer;
+}
+
+.error {
+    color: red;
+    font-size: 12px;
+}
+
+#counter {
+    font-size: 12px;
+}
+
+
+
+/* RESPONSIVE */
+@media screen and (max-width: 768px) {
+    form {
+        width: 90%;
+    }
+    .program-container {
+        flex-wrap: nowrap;
+    }
+}
+
+
+

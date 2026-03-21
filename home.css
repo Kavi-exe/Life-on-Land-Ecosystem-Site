@@ -46,19 +46,6 @@
     
 }
 
-.header {  /*header changes*/
-    display: flex;
-    position: fixed;
-    justify-content: space-between;
-    align-items: center;
-    background: rgba(0,0,0,0.7);
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 80px;
-    z-index: 1000;
-}
-
 .background-image { /*background image changes*/
     position: relative;
     margin-top: 80px;

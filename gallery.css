@@ -12,7 +12,7 @@
 }
 
 #gallery { /*full gallery changes*/
-    margin-top: 220px;
+    margin-top: 120px;
 }
 
 
@@ -33,31 +33,3 @@
     
 }
 
-.class_name { /*class name "Gallery" changes*/
-    color: #ffffff;
-    text-align: center;
-    font-size: 50px;
-    font-family: 'f1';
-    margin-bottom: -50px;
-    letter-spacing: 5px;
-    position: relative;
-    width: 100px;
-    left: 675px;
-    margin-top: -100px;
-}
-
-
-.class_name::after {  /*animated underline*/
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: -8px;
-    width: 0%;
-    height: 4px;
-    background-color: #ffffff7f;
-    transition: width 0.6s ease;
-}
-
-.class_name:hover::after { /*animation after part*/
-    width: 100%;
-}

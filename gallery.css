@@ -1,3 +1,7 @@
+body {
+    margin-top: 80px;
+}
+
 #image-holder {  /*image holder changes*/
     display: flex;
     justify-content: center;
@@ -8,7 +12,7 @@
     overflow: hidden;
     transition: 500ms;
     padding: 25px;
-    
+    margin-top: 60px;
 }
 
 #gallery { /*full gallery changes*/
@@ -17,19 +21,15 @@
 
 
 .gallery_img { /*image changes*/
-    width: 240px;
-    height: 320px;
+    width: 280px;
+    height: 360px;
     border-radius: 20px;
     transition: transform 0.4s ease;
-
 }
 
 .gallery_img:hover { /*image on hover changes*/
-    transform: scale(1.08);
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(255, 255, 255, 0.2);
     transition-delay: 10ms;
-    cursor: pointer;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 100px 0 rgba(255, 255, 255, 0.314);
-    
+    cursor: pointer;    
 }
-

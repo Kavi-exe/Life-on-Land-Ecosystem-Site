@@ -23,7 +23,6 @@ html {
 
 body {  /*body changes*/
     background-color: #000000;
-    margin-top: 80px;
 }
 
 
@@ -81,10 +80,6 @@ nav li { /*nav bar changes*/
     padding: 8px;
 }
 
-
-
-
-
 nav li a { /* nav bar changes */
 
     display: block;
@@ -131,6 +126,7 @@ nav li a:not(.active):hover::after { /*animation after part*/
     letter-spacing: 5px;
     position: relative;
     justify-content: center;
+    cursor: pointer;
 }
 
 
@@ -143,7 +139,6 @@ footer { /*footer styles*/
     background-color: #ffffff;
     font-family: 'f1';
     letter-spacing: 3px;
-    
 }
 
 /* Mission & Goals Section */
@@ -170,6 +165,7 @@ footer { /*footer styles*/
     max-width: 300px;
     text-align: left;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
 }
 
 .card:hover {
@@ -188,7 +184,7 @@ footer { /*footer styles*/
     font-family: 'f1';
     font-size: 24px;
     margin-bottom: 10px;
-    color: #fffa;
+    color: rgb(255, 255, 255);
     letter-spacing: 2px;
 }
 

@@ -1,5 +1,6 @@
 body {
     margin-top: 80px;
+    background-blend-mode: ;
 }
 
 #image-holder {  /*image holder changes*/
@@ -33,3 +34,4 @@ body {
     transition-delay: 10ms;
     cursor: pointer;    
 }
+

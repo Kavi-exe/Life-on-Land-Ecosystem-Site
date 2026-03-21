@@ -22,10 +22,10 @@
         <div class="right-part">
             <nav>
                 <ul>
-                    <li><a href = "home.html" class="active">Home</a></li>
+                    <li><a href = "home.html">Home</a></li>
                     <li><a href = "gallery.html">Gallery</a></li>
                     <li><a href = "action_impact_simulator.html">Action Impact</a></li>
-                    <li><a href = "feedback.html">Feedback</a></li>
+                    <li><a href = "feedback.html" class="active">Feedback</a></li>
                     <li><a href = "team.html">Team</a></li>
                     <li><a href = "sitemap.html">Sitemap</a></li>
                     <li><a href = "user_profile.html">User Profile</a></li>
@@ -35,13 +35,13 @@
     </header>
 
 
-<main class="space">
+<main>
 
 <!-- PROGRAM DIRECTORY -->
 <section class="program-section">
-    <h2>Explore Programs</h2>
+    <h2 class="class_name">Explore Programs</h2>
 
-    <select>
+    <select class="selection">
         <option>Most Popular</option>
         <option>Nearest</option>
         <option>Student-Friendly</option>
@@ -52,30 +52,30 @@
     <div class="program-container">
 
         <div class="card">
-            <img src="images/background.jpg" alt="Forest conservation">
-            <h3>Forest Conservation</h3>
-            <p>Protect forests and ecosystems.</p>
+            <img src="images/feedback_card1.jpg" alt="Forest conservation" class="card-img">
+            <h3>Protect Forests</h3>
+            <p>Forests are vital for clean air, biodiversity, and climate regulation. Protecting them ensures a sustainable future for communities and wildlife.</p>
             <button>Join</button>
         </div>
 
         <div class="card">
-            <img src="images/Tree planting.jpg" alt="Tree planting">
-            <h3>Tree Planting</h3>
-            <p>Plant trees in your community.</p>
+            <img src="images/feedback_card2.jpg" alt="Tree planting" class="card-img">
+            <h3>Restore Soil Health</h3>
+            <p>Healthy soil is the foundation for agriculture and food security. Maintaining soil vitality combats desertification and promotes sustainable farming.</p>
             <button>Get Involved</button>
         </div>
 
         <div class="card">
-            <img src="images/Wildlifeprotection.jpg" alt="Wildlife protection">
-            <h3>Wildlife Protection</h3>
-            <p>Protect endangered species.</p>
+            <img src="images/feedback_card3.jpg" alt="Wildlife protection" class="card-img">
+            <h3>Safeguard Wildlife</h3>
+            <p>Preserving wildlife ensures balanced ecosystems and enriches biodiversity. Everyone can play a role in protecting endangered species.</p>
             <button>Learn More</button>
         </div>
 
         <div class="card">
-            <img src="images/ECO campaign.jpg" alt="Eco campaign">
-            <h3>Eco Campaign</h3>
-            <p>Raise awareness for nature.</p>
+            <img src="images/feedback_card4.jpg" alt="Eco campaign" class="card-img">
+            <h3>Sustainable Land Use</h3>
+            <p>How we use land today affects future generations. Responsible land use helps prevent environmental damage, supports communities, and ensures long-term resource availability.</p>
             <button>Join</button>
         </div>
 
@@ -165,44 +165,6 @@
     <p>© 2026 Life on Land | Page Editor | Validation</p>
 </footer>
 
-<script>
-/* CHARACTER COUNTER */
-const message = document.getElementById("message");
-const counter = document.getElementById("counter");
-
-message.addEventListener("input", () => {
-    counter.textContent = (150 - message.value.length) + " characters remaining";
-});
-
-/* SIMPLE VALIDATION */
-document.getElementById("form").addEventListener("submit", function(e){
-    e.preventDefault();
-
-    let valid = true;
-
-    let name = document.getElementById("name");
-    let email = document.getElementById("email");
-
-    document.getElementById("nameError").textContent = "";
-    document.getElementById("emailError").textContent = "";
-
-    if(name.value === ""){
-        document.getElementById("nameError").textContent = "Name required";
-        valid = false;
-    }
-
-    if(email.value === ""){
-        document.getElementById("emailError").textContent = "Email required";
-        valid = false;
-    }
-
-    if(valid){
-        document.getElementById("successMsg").textContent = "✅ Thank you for your feedback!";
-        this.reset(); // optional: reset form after submit
-        counter.textContent = "150 characters remaining";
-    }
-});
-</script>
-
+<script src="feedback.js"></script>
 </body>
 </html>

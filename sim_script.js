@@ -1,5 +1,5 @@
 let selected = [];
-const cards = document.querySelectorAll(".card");
+const cards = document.querySelectorAll(".cards");
 const feedback = document.getElementById("feedback");
 const progressBar = document.getElementById("progressBar");
 

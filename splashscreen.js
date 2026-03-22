@@ -23,12 +23,12 @@ const countdownInterval = setInterval(() => {
     } else {
         countdownDisplay.textContent = "Loading...";
         clearInterval(countdownInterval);
-        enterSite(); // 🔥 AUTO ENTER AFTER COUNTDOWN
+        window.location.href = "home.html"; // 🔥 AUTO ENTER AFTER COUNTDOWN
     }
 }, 1000);
 
 // SKIP BUTTON
 skipBtn.addEventListener('click', () => {
     clearInterval(countdownInterval); // stop countdown
-    enterSite(); // go immediately
+    window.location.href = "home.html"; // go immediately
 });

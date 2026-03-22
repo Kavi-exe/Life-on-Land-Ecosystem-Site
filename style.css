@@ -18,67 +18,14 @@ html {
     padding: 0;
     width: 100%;
     height: 100%;
+    overflow-y: scroll;
 }
 
 body {  /*body changes*/
     background-color: #000000;
 }
 
-#home {
-    background-image: url("images/background.jpg");
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
-    width: 100%;
-    animation: zoomBg 15s ease-in;
-}
 
-
-@keyframes zoomBg {
-  0% {
-    background-size: 100%;
-  }
-  50% {
-    background-size: 110%;
-  }
-  100% {
-    background-size: 100%;
-  }
-}
-
-
-#home h1 {
-    font-family: 'f1';
-    font-size: 100px;
-    color: #ffffff;
-    text-align: center;
-    padding-top: 300px;
-}
-
-
-.image_txt{ /*image text changes*/
-    display: flex;
-    position: absolute;
-    top: 56%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    font-family: 'f1';
-    font-size: 24px;
-    stroke-width: 2px;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.353);
-    letter-spacing: 1.5px;
-    
-}
-
-.background_logo { /*logo on home page changes*/
-    font-family: 'f1';
-    font-size: 100px;
-    color: #ffffff;
-    text-align: center;
-    padding-top: 300px;
-    
-}
 
 header {  /*header changes*/
     display: flex;
@@ -109,14 +56,15 @@ header {  /*header changes*/
 }
 
 
-.nav_logo {
+.nav_logo { /*nav bar logo changes*/
     color: white;
     font-size: 22px;
     font-family: 'f1';
     margin-top: -34px;
     margin-left: 20px;
     text-align: center;
-
+    letter-spacing: 1px;
+    cursor: pointer;
 }
 
 nav ul { /*nav bar changes*/
@@ -129,26 +77,8 @@ nav ul { /*nav bar changes*/
 
 nav li { /*nav bar changes*/
     font-family: Arial, Helvetica, sans-serif;
-    padding: 10px;
-    
+    padding: 8px;
 }
-
-
-nav li a { /*nav bar changes*/
-    display: block;
-    color: #ffffff;
-    font-size: 14px;
-    text-decoration: none;
-    font-weight: bold;
-    float: right;
-    padding-top: 8px;
-    padding-bottom: 8px;
-    padding-left: 14px;
-    padding-right: 14px;
-    border-radius: 12px;
-
-}
-
 
 nav li a { /* nav bar changes */
 
@@ -178,48 +108,13 @@ nav li a::after {  /*animated underline*/
     transition: width 0.4s ease;
 }
 
-nav li a:hover::after { /*animation after part*/
+nav li a:not(.active):hover::after { /*animation after part*/
     width: 100%;
 }
 
-.background-image { /*background image changes*/
-    position: relative;
-    margin-top: 80px;
-    width: 100%;
-    height: auto;
-    
-}
-
-
-#image-holder {  /*image holder changes*/
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 30px;
-    width: 100%;
-    height: 500px;
-    overflow: hidden;
-    transition: 500ms;
-    padding: 25px;
-    
-}
-
-
-.gallery_img { /*image changes*/
-    width: 240px;
-    height: 320px;
-    border-radius: 20px;
-    transition: transform 0.4s ease;
-
-}
-
-.gallery_img:hover { /*image on hover changes*/
-    transform: scale(1.08);
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
-    transition-delay: 10ms;
-    cursor: pointer;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 100px 0 rgba(255, 255, 255, 0.314);
-    
+.active {
+    color: #ffffff;
+    box-shadow: rgba(255, 255, 255, 0.493) 0px 2px 4px, rgba(95, 95, 95, 0.3) 0px 7px 13px -3px, rgba(255, 255, 255, 0.2) 0px -3px 0px inset;
 }
 
 .class_name { /*class name "Gallery" changes*/
@@ -230,33 +125,12 @@ nav li a:hover::after { /*animation after part*/
     margin-bottom: -50px;
     letter-spacing: 5px;
     position: relative;
-    width: 100px;
-    left: 675px;
+    justify-content: center;
+    cursor: pointer;
 }
 
 
-.class_name::after {  /*animated underline*/
-
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: -8px;
-    width: 0%;
-    height: 4px;
-    background-color: #ffffff7f;
-    transition: width 0.6s ease;
-}
-
-.class_name:hover::after { /*animation after part*/
-    width: 100%;
-}
-
-
-
-
-
-
-footer {
+footer { /*footer styles*/
     color: rgb(0, 0, 0);
     display: flex;
     justify-content: center;
@@ -265,79 +139,69 @@ footer {
     background-color: #ffffff;
     font-family: 'f1';
     letter-spacing: 3px;
-    
 }
 
-
-
-
-------------------------------------Sanuka------------------------------------
-
-#splash {
-    position: fixed;
-    width: 100%;
-    height: 100vh;
-    background: #000;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 9999;
-    transition: opacity 0.5s ease;
-}
-
-#main-content {
-    display: none;
-}
-
-
-
-/* Background Image with Readability Overlay */
-.splash-container {
-    position: relative;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+/* Mission & Goals Section */
+#mission-goals {
+    background-color: #111;
+    color: #fff;
+    padding: 80px 20px;
     text-align: center;
-    /* Placeholder forest image - replace URL with your own local image if needed */
-    background: url('https://images.unsplash.com/photo-1511497584788-876760111969?q=80&w=2000&auto=format&fit=crop') no-repeat center center;
-    background-size: cover;
-    color: #ffffff;
-}
-
-/* Dark overlay to ensure text remains readable */
-.overlay {
-    position: absolute;
-    top: 0; left: 0; right: 0; bottom: 0;
-    background-color: rgba(15, 30, 15, 0.7); /* Deep dark green/black overlay */
-    z-index: 1;
-}
-
-.splash-content p {
-    color: #aaa;
-    margin-bottom: 40px;
-}
-
-.enter-btn {
-    background-color: #0FB855;
-    color: white;
-    text-decoration: none;
-    padding: 15px 30px;
-    border-radius: 25px;
-    font-size: 1.2em;
-    font-weight: bold;
-    transition: 0.3s;
-}
-
-.enter-btn:hover {
-    background-color: #0A9442;
 }
 
 
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 100px;
+}
 
+.card {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 20px;
+    padding: 25px;
+    max-width: 300px;
+    text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
 
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(255, 255, 255, 0.2);
+}
 
+.card-img {
+    width: 100%;
+    height: 350px;
+    border-radius: 15px;
+    margin-bottom: 15px;
+}
 
+.card h3 {
+    font-family: 'f1';
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: rgb(255, 255, 255);
+    letter-spacing: 2px;
+}
 
+.card p {
+    font-size: 14px;
+    margin-bottom: 15px;
+    line-height: 1.5;
+    color: #ddd;
+}
+
+.card ul {
+    list-style: disc;
+    padding-left: 20px;
+    color: #ccc;
+}
+
+.card ul li {
+    margin-bottom: 8px;
+}
 

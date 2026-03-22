@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Life on Land | Feedback</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="feedback.css">
+
+
+
+
+</head>
+
+<body class="bgimg">
+
+ <header>        
+        <div class="left-part">
+            <h1 class="nav_logo">Land Verse</h1>
+        </div>
+        
+        <div class="right-part">
+            <nav>
+                <ul>
+                    <li><a href = "home.html">Home</a></li>
+                    <li><a href = "gallery.html">Gallery</a></li>
+                    <li><a href = "action_impact_simulator.html">Action Impact</a></li>
+                    <li><a href = "feedback.html" class="active">Feedback</a></li>
+                    <li><a href = "team.html">Team</a></li>
+                    <li><a href = "sitemap.html">Sitemap</a></li>
+                    <li><a href = "user_profile.html">User Profile</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+<main>
+
+<!-- PROGRAM DIRECTORY -->
+<section class="program-section">
+    <h2 class="class_name">Explore Programs</h2>
+
+    <select class="selection">
+        <option>Most Popular</option>
+        <option>Nearest</option>
+        <option>Student-Friendly</option>
+    </select><br>
+    <br>
+    <br>
+
+    <div class="program-container">
+
+        <div class="card">
+            <img src="images/feedback_card1.jpg" alt="Forest conservation" class="card-img">
+            <h3>Protect Forests</h3>
+            <p>Forests are vital for clean air, biodiversity, and climate regulation. Protecting them ensures a sustainable future for communities and wildlife.</p>
+            <button>Join</button>
+        </div>
+
+        <div class="card">
+            <img src="images/feedback_card2.jpg" alt="Tree planting" class="card-img">
+            <h3>Restore Soil Health</h3>
+            <p>Healthy soil is the foundation for agriculture and food security. Maintaining soil vitality combats desertification and promotes sustainable farming.</p>
+            <button>Get Involved</button>
+        </div>
+
+        <div class="card">
+            <img src="images/feedback_card3.jpg" alt="Wildlife protection" class="card-img">
+            <h3>Safeguard Wildlife</h3>
+            <p>Preserving wildlife ensures balanced ecosystems and enriches biodiversity. Everyone can play a role in protecting endangered species.</p>
+            <button>Learn More</button>
+        </div>
+
+        <div class="card">
+            <img src="images/feedback_card4.jpg" alt="Eco campaign" class="card-img">
+            <h3>Sustainable Land Use</h3>
+            <p>How we use land today affects future generations. Responsible land use helps prevent environmental damage, supports communities, and ensures long-term resource availability.</p>
+            <button>Join</button>
+        </div>
+
+    </div>
+</section>
+
+<!-- REVIEWS -->
+<section class="reviews">
+    <h2>⭐ 8.6/10 Excellent (120 Reviews)</h2>
+
+    <div class="review-card">
+        <h4>Amazing Experience</h4>
+        <p>Great program... <a href="#">See more</a></p>
+        <small>John - 2026</small>
+        <p>Rating: 9/10</p>
+    </div>
+
+    <div class="review-card">
+        <h4>Very Helpful</h4>
+        <p>Learned a lot... <a href="#">See more</a></p>
+        <small>Amal - 2026</small>
+        <p>Rating: 8/10</p>
+    </div>
+
+    <div class="review-card">
+        <h4>Good Initiative</h4>
+        <p>Nice project... <a href="#">See more</a></p>
+        <small>Sara - 2026</small>
+        <p>Rating: 8.5/10</p>
+    </div>
+</section>
+
+<!-- FEEDBACK FORM -->
+<section>
+    <h2>Submit Feedback</h2>
+
+    <form id="form">
+
+    <fieldset>
+      <legend>Personal Details</legend>
+
+      <label>Full Name</label>
+      <input type="text" id="name">
+      <div class="error" id="nameError"></div>
+
+      <label>Email</label>
+      <input type="email" id="email">
+      <div class="error" id="emailError"></div>
+
+      <label>Telephone</label>
+      <input type="tel">
+
+      <label>Address</label>
+      <textarea></textarea>
+    </fieldset>
+
+    <fieldset>
+      <legend>Feedback Details</legend>
+
+      <label>Program</label>
+      <select>
+          <option>Forest Conservation</option>
+          <option>Tree Planting</option>
+      </select>
+
+      <label>Message</label>
+      <textarea id="message" maxlength="150"></textarea>
+      <small id="counter">150 characters remaining<br><br></small>
+
+      
+
+      <label>Date & Time</label>
+      <input type="datetime-local">
+    </fieldset>
+
+    <button type="submit">Send Feedback</button>
+
+    </form>
+
+    <p id="successMsg"></p>
+
+</section>
+
+</main>
+
+<footer>
+    <p>© 2026 Life on Land | Page Editor | Validation</p>
+</footer>
+
+<script src="feedback.js"></script>
+</body>
+</html>

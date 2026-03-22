@@ -31,13 +31,41 @@
         <section id ="gallery">
             <h2 class="class_name">GALLERY</h2>
             <div id="image-holder">
-                <img src="images/gallery1.jpg" class="gallery_img" alt="image1">
-                <img src="images/gallery2.jpg" class="gallery_img" alt="image2">
-                <img src="images/gallery3.jpg" class="gallery_img" alt="image3">
-                <img src="images/gallery4.jpg" class="gallery_img" alt="image4">
+                <div class="img-box">
+                    <p class="image-title">Forest</p>
+                    <img src="images/gallery1.jpg" class="gallery_img" alt="image1">
+                    <p class="image-description">Student1 - Kaveesha</p>
+                </div>
+
+                <div class="img-box">
+                    <p class="image-title">Forest</p>
+                    <img src="images/gallery2.jpg" class="gallery_img" alt="image2">
+                    <p class="image-description">Student2 - Sanuka</p>
+                </div>
+
+                <div class="img-box">
+                    <p class="image-title">Forest</p>
+                    <img src="images/gallery3.jpg" class="gallery_img" alt="image3">
+                    <p class="image-description">Student3 - Lakvindu</p>
+                </div>
+
+                <div class="img-box">
+                    <p class="image-title">Forest</p>
+                    <img src="images/gallery4.jpg" class="gallery_img" alt="image4">
+                    <p class="image-description">Student4 - Thenuja</p>
+                </div>
             </div>
         </section>
-        
+        <div id="modal">
+            <span id="closeBtn">&times;</span>
+
+            <div id="modal-content">
+                <img id="modalImg" src="">
+                <h2 id="modalTitle"></h2>
+                <p id="modalDesc"></p>
+            </div>
+        </div>
+
     </main>
 
     
@@ -45,5 +73,7 @@
 <footer>
     <p>Copyright &copy; 2022. All rights reserved.</p>
 </footer>
+
+<script src="gallery.js"></script>
 </body>
 </html>

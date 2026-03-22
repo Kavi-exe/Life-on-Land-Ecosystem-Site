@@ -21,8 +21,8 @@ body {
 
 
 .gallery_img { /*image changes*/
-    width: 280px;
-    height: 360px;
+    width: 350px;
+    height: 250px;
     border-radius: 20px;
 }
 
@@ -38,7 +38,7 @@ body {
     left: 50%;
     transform: translateX(-50%);
     color: white;
-    font-size: 20px;
+    font-size: 12px;
     letter-spacing: 2px;
     opacity: 0;
     transition: 0.3s ease;
@@ -79,7 +79,7 @@ body {
     width: 200px;
     color: #ffffff;
     text-align: center;
-    font-size: 40px;
+    font-size: 30px;
     font-family: 'f1';
     letter-spacing: 5px;
     justify-content: center;

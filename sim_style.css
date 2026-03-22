@@ -20,12 +20,19 @@ main {
 }
 
 .cards {
-    background: rgba(255,255,255,0.1);
-    border-radius: 16px;
+    background: rgba(20, 20, 20, 0.95);
+    border-radius: 20px;
     padding: 15px;
-    cursor: pointer;
     backdrop-filter: blur(10px);
     height: 320px;
+    border: 1px solid rgba(255,255,255,0.08);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.cards:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 20px rgba(255,255,255,0.08);
 }
 
 .cards.selected {

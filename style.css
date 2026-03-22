@@ -205,3 +205,8 @@ footer { /*footer styles*/
     margin-bottom: 8px;
 }
 
+
+.card.selected {
+    border: 2px solid #ffffff71;
+    box-shadow: 0 0 20px #ffffff71;
+}

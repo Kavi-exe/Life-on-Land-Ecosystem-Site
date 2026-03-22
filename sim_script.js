@@ -43,15 +43,15 @@ function updateUI(){
 
     if(total <= 4){
         level = "Low Impact";
-        bg = "https://images.unsplash.com/photo-1497436072909-60f360e1d4b1";
+        bg = "images/low.jpg";
         percent = 30;
     } else if(total <= 9){
         level = "Medium Impact";
-        bg = "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee";
+        bg = "images/medium.jpg";
         percent = 65;
     } else {
         level = "High Impact";
-        bg = "https://images.unsplash.com/photo-1508780709619-79562169bc64";
+        bg = "images/high.jpg";
         percent = 100;
     }
 

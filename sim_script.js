@@ -42,15 +42,15 @@ function updateUI(){
     let level, bg, percent;
 
     if(total <= 4){
-        level = "Low Impact 🌍";
+        level = "Low Impact";
         bg = "https://images.unsplash.com/photo-1497436072909-60f360e1d4b1";
         percent = 30;
     } else if(total <= 9){
-        level = "Medium Impact 🌿";
+        level = "Medium Impact";
         bg = "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee";
         percent = 65;
     } else {
-        level = "High Impact 🌳🔥";
+        level = "High Impact";
         bg = "https://images.unsplash.com/photo-1508780709619-79562169bc64";
         percent = 100;
     }

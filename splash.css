@@ -44,6 +44,7 @@
 
 
 .splash-content h1 {
+    display: flex;
     font-family: 'f1';
     font-size: 100px;
     color: #ffffff;
@@ -60,6 +61,13 @@
     text-align: center;
 }
 
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+
 .enter-btn {
     align-items: center;
     transition: 0.3s;
@@ -73,7 +81,7 @@
     color: rgb(255, 255, 255);
     font-family: 'f1';
     letter-spacing: 2.5px;
-    margin-left: 168px;
+    
     cursor: pointer;
 }
 

@@ -29,7 +29,7 @@ document.getElementById("form").addEventListener("submit", function(e){
     }
 
     if(valid){
-        document.getElementById("successMsg").textContent = "✅ Thank you for your feedback!";
+        document.getElementById("successMsg").textContent = "Thank you for your feedback!";
         this.reset(); // optional: reset form after submit
         counter.textContent = "150 characters remaining";
     }

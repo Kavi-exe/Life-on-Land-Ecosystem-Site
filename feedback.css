@@ -1,6 +1,15 @@
 main {
     margin-top: 100px;
 }
+
+h2{
+   font-family: 'f1';
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: rgb(255, 255, 255);
+    letter-spacing: 2px;
+    margin-left: 15px;
+}
 .program-section {
     background: rgba(0, 0, 0, 0.201);
     padding: 20px;
@@ -8,7 +17,7 @@ main {
     margin-bottom: 30px;
 }
 
-/* SCROLLABLE */
+
 .program-container {
     display: flex;
     gap: 30px;
@@ -17,20 +26,38 @@ main {
     margin-top: 30px;
 }
 
-.selection {
+.select-container {
     display: flex;
-    width: 400px;
-    position: relative;
-    margin-left: 535px;
-    margin-top: 80px;
-    border-radius: 16px;
-    font-family: 'f1';
-    letter-spacing: 2px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.selection {
+    appearance: none; /* remove default style */
+    background: rgba(255, 255, 255, 0.08);
+    color: #fff;
+    border-radius: 12px;
+    width: 500px;
+    margin-top: 60px;
+    padding: 12px 40px 12px 16px;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    outline: none;
+    cursor: pointer;
+    backdrop-filter: blur(10px);
+    transition: all 0.3s ease;
+}
+
+.selection:hover {
+    border-color: rgba(255, 255, 255, 0.5);
+    background: rgba(255, 255, 255, 0.12);
+    color:rgb(155, 155, 155);
 }
 
 
-/* BUTTON INSIDE CARD */
-.card button {
+
+
+button { 
     margin-top: 20px;
     padding: 10px;
     width: 100%;
@@ -43,91 +70,186 @@ main {
     transition: 0.3s;
 }
 
-.card button:hover {
+button:hover {
     background: #9d9d9d;
 }
 
 
-/* ===== REVIEWS ===== */
+
 .reviews {
-    background: rgba(0, 0, 0, 0.201);
-    padding: 20px;
-    border-radius: 10px;
-    margin-bottom: 30px;
+    text-align: center;
+    color: white;
+    margin-top: 80px;
 }
+
+
+.review-heading1 {
+    font-size: 22px;
+    font-weight: 500;
+    margin-bottom: 30px;
+    color: #ddd;
+}
+
 
 .review-card {
-    background: #1b1b1b;
-    padding: 15px;
-    margin: 10px 0;
-    border-radius: 8px;
+    background: rgba(20, 20, 20, 0.95);
+    border-radius: 20px;
+    width: 60%;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid rgba(255,255,255,0.08);
+    text-align: left;
+    transition: all 0.3s ease;
 }
 
-/* ===== FORM (65% CENTERED) ===== */
+.review-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 20px rgba(255,255,255,0.08);
+}
+
+
+.review-heading {
+    color: white;
+    font-size: 18px;
+    margin-bottom: 8px;
+    font-family: 'f1';
+    letter-spacing: 2px;
+}
+
+
+.review-para1 {
+    color: #aaa;
+    font-size: 14px;
+    margin-bottom: 8px;
+    font-family: 'f1';
+    letter-spacing: 2px;
+}
+
+
+.review-card a {
+    color: #ccc;
+    text-decoration: none;
+    font-size: 13px;
+    transition: 0.3s;
+    font-family: 'f1';
+    letter-spacing: 2px;
+}
+
+.review-card a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+
+.review-card small {
+    display: block;
+    color: #666;
+    font-size: 12px;
+    margin-bottom: 8px;
+    font-family: 'f1';
+    letter-spacing: 2px;
+}
+
+.review-para2 {
+    color: #bbb;
+    font-weight: 500;
+    font-family: 'f1';
+    letter-spacing: 2px;
+}
+
+
 form {
-    background: rgba(0,0,0,0.7);
-    padding: 20px;
-    border-radius: 10px;
+    background: rgba(15, 15, 15, 0.95);
+    font-family: 'f1';
+    letter-spacing: 2px;
+    padding: 30px;
+    border-radius: 20px;
     width: 55%;
-    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 80px;
+    margin-bottom: 40px;
+    border: 1px solid rgba(255,255,255,0.08);
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    transition: transform 0.5s ease, box-shadow 0.3s ease;
+    gap: 20px;
+    transition: all 0.9s ease;
 }
+
 form:hover {
-   transform: scale(1.05);
-    box-shadow: 0 8px 15px rgba(76, 175, 80, 0.5);
+    box-shadow: 0 0 25px rgba(255, 255, 255, 0.204);
 }
+
 
 fieldset {
-    border: 4px solid #4CAF50;
-    margin-bottom: 15px;
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 16px;
+    padding: 20px;
 }
 
-
+/* Legend */
 legend {
-    color: #4CAF50;
+    color: #aaa;
+    font-size: 14px;
+    letter-spacing: 1px;
 }
+
+
+label {
+    color: #ccc;
+    font-size: 13px;
+}
+
 
 input, textarea, select {
-    width: 97%;
-    padding: 8px;
-    margin: 8px 0;
+    width: 100%;
+    padding: 12px 16px;
+    margin-top: 6px;
+    margin-bottom: 12px;
+    background: rgba(255,255,255,0.03);
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 12px;
+    color: white;
+    font-size: 14px;
+    outline: none;
+    transition: all 0.3s ease;
 }
 
-button{
-color: black;
-background-color: #08b910;
-height:45px;
+/* Character counter */
+#counter {
+    font-size: 12px;
+    color: #777;
 }
 
-button:hover{
-color:rgb(0, 0, 0);
-background-color:#07f10f;
-cursor: pointer;
+input:focus{
+    border-color: rgba(255,255,255,0.3);
+    box-shadow: 0 0 10px rgba(255,255,255,0.1);
+}
+
+textarea:focus {
+    border-color: rgba(255,255,255,0.3);
+    box-shadow: 0 0 10px rgba(255,255,255,0.1);
+}
+
+select:focus {
+    border-color: rgba(255,255,255,0.3);
+    box-shadow: 0 0 10px rgba(255,255,255,0.1);
 }
 
 .error {
-    color: red;
+    color: #ff5c5c;
     font-size: 12px;
 }
 
-#counter {
-    font-size: 12px;
+#successMsg {
+    color: #aaa;
+    font-size: 14px;
+    letter-spacing: 1px;
+    text-align: center;
+    padding: 20px;
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 16px;
+    background: rgba(255,255,255,0.03);
 }
-
-
-
-/* RESPONSIVE */
-@media screen and (max-width: 768px) {
-    form {
-        width: 90%;
-    }
-    .program-container {
-        flex-wrap: nowrap;
-    }
-}
-
 
 

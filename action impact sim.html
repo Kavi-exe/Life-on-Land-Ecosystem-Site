@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SDG Impact Simulator</title>
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- NAVIGATION BAR -->
+<header>        
+    <div class="left-part">
+        <h1 class="nav_logo">Land Verse</h1>
+    </div>
+    
+    <div class="right-part">
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#action-impact">Action Impact</a></li>
+                <li><a href="#feedback">Feedback</a></li>
+                <li><a href="#team">Team</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<div class="overlay">
+<main>
+
+<h2>Select Your Actions</h2>
+
+<div class="card-container">
+
+<div class="card" data-points="2">
+<img src="plant trees.jpg">
+<h3>Plant Trees</h3>
+<p>Improve air quality and biodiversity.</p>
+<button>Select</button>
+</div>
+
+<div class="card" data-points="3">
+<img src="reduce paper.jpg">
+<h3>Reduce Paper</h3>
+<p>Switch to digital materials.</p>
+<button>Select</button>
+</div>
+
+<div class="card" data-points="4">
+<img src="protect wildlife.jpg">
+<h3>Protect Wildlife</h3>
+<p>Support conservation efforts.</p>
+<button>Select</button>
+</div>
+
+<div class="card" data-points="1">
+<img src="no littering.jpg">
+<h3>No Littering</h3>
+<p>Keep nature clean.</p>
+<button>Select</button>
+</div>
+
+<div class="card" data-points="5">
+<img src="eco projects.jpg">
+<h3>Volunteer</h3>
+<p>Join eco projects.</p>
+<button>Select</button>
+</div>
+
+<div class="card" data-points="2">
+<img src="recycle.jpg">
+<h3>Recycle</h3>
+<p>Reduce waste impact.</p>
+<button>Select</button>
+</div>
+
+</div>
+
+<div class="progress-container">
+<div class="progress-bar" id="progressBar"></div>
+</div>
+
+<div id="feedback">Impact Score: 0 | Level: None</div>
+
+<button class="reset-btn" onclick="resetAll()">Reset</button>
+
+</main>
+
+<footer>
+Page Editor | Validation
+</footer>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

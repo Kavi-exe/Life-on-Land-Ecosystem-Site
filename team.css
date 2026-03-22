@@ -1,33 +1,5 @@
-/*Team page*/
-.bgimg{
-margin: 0;
-font-family: Arial, sans-serif;
-background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.8)),
-            url("images/background.jpg");
-background-size: cover;
-background-position: center;
-background-attachment: fixed;
-color: white;
-animation: zoomBg 15s ease-in infinite;
-    
-}
-   
-
-
-@keyframes zoomBg {
-  0% {
-    background-size: 100%;
-  }
-  50% {
-    background-size: 110%;
-  }
-  100% {
-    background-size: 100%;
-  }
-}
-
-.space{
-    margin-top: 100px;
+body {
+  margin-top: 80px;
 }
 
 h2{

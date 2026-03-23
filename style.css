@@ -161,6 +161,7 @@ footer { /*footer styles*/
     padding: 25px;
     max-width: 300px;
     text-align: left;
+    text-decoration: none;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     cursor: pointer;
 }

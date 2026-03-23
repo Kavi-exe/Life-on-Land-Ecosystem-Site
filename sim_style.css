@@ -83,12 +83,24 @@ main {
     width: 80%;
     margin: 30px auto;
     background: rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
 }
 
 .progress-bar {
     height: 12px;
     width: 0%;
     background: #ffffff;
+    border-radius: 20px;
+    transition: width 0.3s ease;
+}
+
+.progress-text {
+    text-align: center;
+    font-size: 18px;
+    font-family: 'f1';
+    letter-spacing: 2px;
+    color: #ffffff;
+    margin-top: 10px;
 }
 
 .reset-btn {

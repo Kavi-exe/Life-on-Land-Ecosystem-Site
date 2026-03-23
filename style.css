@@ -29,7 +29,7 @@ header {  /*header changes*/
     position: fixed;
     justify-content: space-between;
     align-items: center;
-    background: rgba(0,0,0,0.7);
+    background: rgba(0, 0, 0, 0.7);
     top: 0;
     left: 0;
     width: 100%;
@@ -55,10 +55,10 @@ header {  /*header changes*/
 
 .nav_logo { /*nav bar logo changes*/
     color: white;
-    font-size: 22px;
+    font-size: 26px;
     font-family: 'f1';
     margin-top: -34px;
-    margin-left: 20px;
+    margin-left: 50px;
     text-align: center;
     letter-spacing: 1px;
     cursor: pointer;

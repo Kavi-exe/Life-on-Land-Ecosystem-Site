@@ -4,7 +4,7 @@ main {
     color: white;
 }
 
-/* MAIN TITLE */
+
 h1 {
     text-align: center;
     font-size: 40px;
@@ -59,7 +59,7 @@ p {
     border-color: #ffffff;
 }
 
-/* SECTION DESIGN */
+
 .content-section {
     display: flex;
     align-items: center;
@@ -102,12 +102,12 @@ p {
     transform: scale(1.05);
 }
 
-/* ALTERNATE */
+
 .reverse {
     flex-direction: row-reverse;
 }
 
-/* NAVIGATION */
+
 .internal-nav {
     margin-bottom: 40px;
     text-align: center;
@@ -136,7 +136,7 @@ p {
     transform: scale(1.1);
 }
 
-/* TOP BUTTON */
+
 .top-btn {
     position: fixed;
     bottom: 30px;
@@ -157,7 +157,7 @@ p {
 }
 
 
-/* MOBILE */
+
 @media (max-width: 768px) {
     .content-section {
         flex-direction: column !important;

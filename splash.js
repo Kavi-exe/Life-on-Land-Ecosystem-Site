@@ -1,4 +1,4 @@
-let timeLeft = 6;
+let timeLeft = 10;
 const countdownDisplay = document.getElementById('countdown-display');
 const splash = document.getElementById('splash');
 const mainContent = document.getElementById('main-content');

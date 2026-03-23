@@ -43,15 +43,15 @@ function updateUI(){
 
     if(total <= 4){
         level = "Low Impact";
-        bg = "images/low.jpg";
+        bg = "images/low.png";
         percent = 30;
     } else if(total <= 9){
         level = "Medium Impact";
-        bg = "images/medium.jpg";
+        bg = "images/medium.png";
         percent = 65;
     } else {
         level = "High Impact";
-        bg = "images/high.jpg";
+        bg = "images/high.png";
         percent = 100;
     }
 

@@ -1,0 +1,56 @@
+body {
+    font-family: Arial, sans-serif;
+    color: white;
+    background: #000;
+    margin: 0;
+    padding: 0;
+}
+
+
+.sitemap-container {
+    margin: 100px auto;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.svg-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    background: rgba(0, 0, 0, 0.4);
+    border-radius: 12px;
+    padding: 20px;
+    overflow-x: auto;
+}
+
+.node-rect {
+    fill: #333;
+    stroke: #0c9c30;
+    stroke-width: 2;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.node-group:hover .node-rect {
+    fill: #0c9c30;
+    stroke: #0d8502;
+    stroke-width: 3;
+}
+
+.node-text {
+    fill: #D3ECCD;
+    font-size: 16px;
+    font-weight: bold;
+    text-anchor: middle;
+    dominant-baseline: middle;
+    pointer-events: none;
+    transition: fill 0.3s ease;
+}
+
+.node-group:hover .node-text {
+    fill: #fff;
+}
+
+.link-line {
+    stroke: #0FB855;
+    stroke-width: 2;
+}

@@ -1,0 +1,65 @@
+body {
+    margin-top: 100px;
+    height: 800px;
+}
+
+.instructions {
+    margin-top: 60px;
+    color: white;
+    text-align: center;
+    font-family: 'f1';
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+.svg-container {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    background: rgba(0, 0, 0, 0.4);
+    border-radius: 12px;
+    padding: 20px;
+    overflow-x: auto;
+    margin-bottom: 100px;
+}
+
+.node-rect {
+    fill: #333;
+    stroke: #000000;
+    stroke-width: 2;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.node-group:hover .node-rect,
+.node-group:focus .node-rect {
+    fill: #000000;
+    stroke: #fff;
+    stroke-width: 3;
+}
+
+.node-text {
+    fill: white;
+    font-family: 'f1';
+    letter-spacing: 2px;
+    font-size: 16px;
+    font-weight: bold;
+    text-anchor: middle;
+    dominant-baseline: middle;
+    pointer-events: none;
+    transition: fill 0.3s ease;
+}
+
+.node-group:hover .node-text,
+.node-group:focus .node-text {
+    fill: #fff;
+}
+
+.link-line {
+    stroke: #0FB855;
+    stroke-width: 2;
+}
+
+.node-group {
+    outline: none;
+}

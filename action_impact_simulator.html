@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SDG Impact Simulator</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="global.css">
     <link rel="stylesheet" href="sim_style.css">
 </head>
 
@@ -33,6 +33,13 @@
     <main>
 
         <h2 class="class_name">Select Your Actions</h2>
+
+        <div class="progress-container">
+            <div class="progress-bar" id="progressBar">
+            </div>
+        </div>
+
+        <div id="feedback">Impact Score: 0 | Level: None</div>
 
         <div class="card-container">
 
@@ -86,17 +93,13 @@
 
         </div>
 
-        <div class="progress-container">
-            <div class="progress-bar" id="progressBar">
-            </div>
-        </div>
-
-        <div id="feedback">Impact Score: 0 | Level: None</div>
+        
 
         <button class="reset-btn" onclick="resetAll()">Reset</button>
 
     </main>
 
+<a href="#top" class="top-btn">Top ↑</a>
 <footer>
     <p>Copyright &copy; 2022. All rights reserved.</p>
 </footer>
@@ -104,5 +107,6 @@
 </div>
 
 <script src="sim_script.js"></script>
+<script src="global.js"></script>
 </body>
 </html>

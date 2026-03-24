@@ -127,17 +127,6 @@ nav li a:not(.active):hover::after { /*animation after part*/
 }
 
 
-footer { /*footer styles*/
-    color: rgb(0, 0, 0);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100px;
-    background-color: #ffffff;
-    font-family: 'f1';
-    letter-spacing: 3px;
-}
-
 /* Mission & Goals Section */
 #mission-goals {
     background-color: #111;
@@ -207,4 +196,53 @@ footer { /*footer styles*/
 .card.selected {
     border: 2px solid #ffffff71;
     box-shadow: 0 0 20px #ffffff71;
+}
+
+.top-btn {
+    text-decoration: none;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(12px);
+    color: #ffffff;
+    padding: 12px 18px;
+    border-radius: 50px;
+    font-weight: bold;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+    font-family: 'f1';
+    letter-spacing: 2px;
+    transition: all 0.3s ease;
+    mix-blend-mode: difference;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(20px);
+}
+
+.top-btn.show {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.top-btn:hover {
+    transform: scale(1.1);
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 10px 35px rgba(255, 255, 255, 0.25);
+}
+
+.top-btn:active {
+    color: rgb(234, 234, 234);
+}
+
+footer { /*footer styles*/
+    color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    background-color: #ffffff;
+    font-family: 'f1';
+    letter-spacing: 3px;
 }

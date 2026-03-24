@@ -1,0 +1,152 @@
+body {
+    height: 800px;
+}
+
+span {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.profile-container {
+    margin-top: 120px;
+    padding: 20px;
+    color: white;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    margin-bottom: 500px;
+}
+
+
+.note {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 14px;
+    margin-top: 80px;
+    font-family: 'f1';
+    letter-spacing: 2px;    
+}
+
+.progress-wrapper {
+    margin-bottom: 30px;
+}
+
+.progress-text {
+    font-weight: bold;
+    margin-bottom: -25px;
+    color: #ffffff;
+    font-family: 'f1';
+    letter-spacing: 2px; 
+
+}
+
+.progress-container {
+    width: 100%;
+    background-color: #444;
+    border-radius: 12px;
+    overflow: hidden;
+    margin-top: 30px;
+}
+
+.progress-bar {
+    width: 800px;
+    height: 24px;
+    background-color: #ffffff;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    line-height: 24px;
+    transition: width 0.5s ease-in-out;
+    font-family: 'f1';
+    letter-spacing: 2px; 
+}
+
+.profile-output {
+    padding: 20px;
+    border-radius: 16px;
+    display: none;
+    margin-top: 30px;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.25);
+    transition: 0.3s;
+}
+
+.profile-output:hover {
+    box-shadow: 0 15px 50px rgba(255, 255, 255, 0.15);
+}
+
+.topic {
+    color: #ffffff;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #0FB855;
+    padding-bottom: 10px;
+    font-family: 'f1';
+    letter-spacing: 2px;
+}
+
+.profile-section {
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #555;
+    display: none;
+}
+
+.profile-section:last-child {
+    border-bottom: none;
+}
+
+.topic{
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.profile-section p {
+    margin-bottom: 8px;
+    font-size: 15px;
+}
+
+.profile-section p strong {
+    display: inline-block;
+    width: 180px;
+    color: #aaa;
+}
+
+.btn {
+    background-color: #ffffff;
+    color: black;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 12px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 16px;
+    margin: 10px 5px;
+    transition: background 0.3s;
+    font-family: 'f1';
+    letter-spacing: 2px; 
+}
+
+.btn:hover {
+    background: #9d9d9d;
+}
+
+.btn-container {
+    text-align: center;
+    margin-top: 60px;
+}
+
+#p-name, #p-habitat, 
+#p-role, #p-name, 
+#p-username, 
+#p#p-animal, 
+#p-topic, 
+#p-action, 
+#p-goal, 
+#p-volunteer {
+    font-family: 'f1';
+    letter-spacing: 2px; 
+}

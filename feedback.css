@@ -201,7 +201,7 @@ label {
 }
 
 
-input, textarea, select {
+input, textarea {
     width: 100%;
     padding: 12px 16px;
     margin-top: 6px;
@@ -213,6 +213,21 @@ input, textarea, select {
     font-size: 14px;
     outline: none;
     transition: all 0.3s ease;
+}
+
+select{
+    width: 100%;
+    padding: 12px 16px;
+    margin-top: 6px;
+    margin-bottom: 12px;
+    background: rgb(255, 255, 255);
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 12px;
+    color: rgb(0, 0, 0);
+    font-size: 14px;
+    outline: none;
+    transition: all 0.3s ease;
+
 }
 
 /* Character counter */

@@ -10,21 +10,22 @@
 </head>
 
 <body>
+
     <header>
         <div class="left-part">
             <h1 class="nav_logo">Land Verse</h1>
         </div>
-        
+
         <div class="right-part">
             <nav>
                 <ul>
-                    <li><a href = "home.html">Home</a></li>
-                    <li><a href = "gallery.html">Gallery</a></li>
-                    <li><a href = "action_impact_simulator.html">Action Impact</a></li>
-                    <li><a href = "feedback.html">Feedback</a></li>
-                    <li><a href = "team.html">Team</a></li>
-                    <li><a href = "sitemap.html" class="active">Sitemap</a></li>
-                    <li><a href = "user_profile.html">User Profile</a></li>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="action_impact_simulator.html">Action Impact</a></li>
+                    <li><a href="feedback.html">Feedback</a></li>
+                    <li><a href="team.html">Team</a></li>
+                    <li><a href="sitemap.html" class="active">Sitemap</a></li>
+                    <li><a href="user_profile.html">User Profile</a></li>
                 </ul>
             </nav>
         </div>
@@ -36,93 +37,70 @@
             <p class="instructions">Use the visual map below to navigate the Life on Land project.</p>
 
             <div class="svg-container">
-                <svg viewBox="0 0 1000 500" width="100%" height="auto" xmlns="http://www.w3.org/2000/svg"
-                    role="navigation" aria-label="Visual Sitemap">
+                <svg viewBox="0 0 1000 500" xmlns="http://www.w3.org/2000/svg" role="navigation"
+                    aria-label="Visual Sitemap">
 
-                    <!-- Root Line -->
-                    <path class="link-line" d="M 500 100 L 500 150" fill="none" />
+                    <path class="link-line" d="M 500 75 L 500 150" />
+                    <path class="link-line" d="M 180 250 L 180 295" />
+                    <path class="link-line" d="M 345 250 L 345 295" />
+                    <path class="link-line" d="M 500 250 L 500 295" />
+                    <path class="link-line" d="M 675 250 L 675 295" />
+                    <path class="link-line" d="M 846 250 L 846 295" />
+                    <path class="link-line" d="M 500 200 L 500 250" />
+                    <path class="link-line" d="M 80 250 L 80 410" />
 
-                    <!-- Parent to Child Connecting Lines -->
-                    <path class="link-line" d="M 150 150 L 850 150" fill="none" />
-
-                    <path class="link-line" d="M 150 150 L 150 200" fill="none" />
-                    <path class="link-line" d="M 290 150 L 290 200" fill="none" />
-                    <path class="link-line" d="M 430 150 L 430 200" fill="none" />
-                    <path class="link-line" d="M 570 150 L 570 200" fill="none" />
-                    <path class="link-line" d="M 710 150 L 710 200" fill="none" />
-                    <path class="link-line" d="M 850 150 L 850 200" fill="none" />
-
-                    <path class="link-line" d="M 500 250 L 500 300" fill="none" />
-                    <path class="link-line" d="M 400 300 L 600 300" fill="none" />
-
-                    <path class="link-line" d="M 400 300 L 400 350" fill="none" />
-                    <path class="link-line" d="M 600 300 L 600 350" fill="none" />
+                    <path class="link-line" d="M 80 410  L 780 410" />
+                    <path class="link-line" d="M 80 250 L 845 250" />
 
 
-                    <!-- Parent Nodes -->
-                    <!-- Splash / Landing -->
-                    <a href="splash.html" tabindex="0" class="node-group" aria-label="Go to Splash Page">
-                        <title>Splash Page</title>
-                        <rect x="420" y="50" width="160" height="50" rx="10" class="node-rect" />
+                    <a href="splash.html" class="node-group" aria-label="Go to Splash Page">
+                        <rect x="420" y="50" width="160" height="50" class="node-rect" />
                         <text x="500" y="75" class="node-text">Splash Screen</text>
                     </a>
-
-                    <!-- Sub Nodes Layer 1 -->
-                    <!-- Home -->
-                    <a href="home.html" tabindex="0" class="node-group" aria-label="Go to Home Page">
-                        <title>Home Page</title>
-                        <rect x="70" y="200" width="160" height="50" rx="10" class="node-rect" />
-                        <text x="150" y="225" class="node-text">Home</text>
+                    <a href="home.html" class="node-group" aria-label="Go to Home Page">
+                        <rect x="430" y="150" width="150" height="50" class="node-rect" />
+                        <text x="510" y="175" class="node-text">Home</text>
                     </a>
 
-                    <!-- Gallery -->
-                    <a href="gallery.html" tabindex="0" class="node-group" aria-label="Go to Gallery Page">
-                        <title>Gallery Page</title>
-                        <rect x="210" y="200" width="160" height="50" rx="10" class="node-rect" />
-                        <text x="290" y="225" class="node-text">Gallery</text>
+
+                    <a href="gallery.html" class="node-group" aria-label="Go to Gallery Page">
+                        <rect x="105" y="300" width="150" height="50" class="node-rect" />
+                        <text x="185" y="325" class="node-text">Gallery</text>
+                    </a>
+                    <a href="action-impact.html" class="node-group" aria-label="Go to Action Impact Page">
+                        <rect x="270" y="300" width="150" height="50" class="node-rect" />
+                        <text x="350" y="325" class="node-text">Action Impact</text>
+                    </a>
+                    <a href="feedback.html" class="node-group" aria-label="Go to Feedback Page">
+                        <rect x="435" y="300" width="150" height="50" class="node-rect" />
+                        <text x="515" y="325" class="node-text">Feedback</text>
+                    </a>
+                    <a href="team.html" class="node-group" aria-label="Go to Team Page">
+                        <rect x="600" y="300" width="150" height="50" class="node-rect" />
+                        <text x="680" y="325" class="node-text">Team</text>
+                    </a>
+                    <a href="user_profile.html" class="node-group" aria-label="Go to User Profile Page">
+                        <rect x="765" y="300" width="150" height="50" class="node-rect" />
+                        <text x="845" y="325" class="node-text">User Profile</text>
+                    </a>
+                    <a href="c1.html" class="node-group" aria-label="Go to User c1 Page">
+                        <rect x="185" y="380" width="150" height="50" class="node-rect" />
+                        <text x="265" y="405" class="node-text">Content 1</text>
                     </a>
 
-                    <!-- Action Impact -->
-                    <a href="action_impact_simulator.html" tabindex="0" class="node-group" aria-label="Go to Action Impact Page">
-                        <title>Action Impact Page</title>
-                        <rect x="350" y="200" width="160" height="50" rx="10" class="node-rect" />
-                        <text x="430" y="225" class="node-text">Action Impact</text>
+                    <a href="c2.html" class="node-group" aria-label="Go to User c1 Page">
+                        <rect x="350" y="380" width="150" height="50" class="node-rect" />
+                        <text x="430" y="405" class="node-text">Content 2</text>
                     </a>
 
-                    <!-- Feedback -->
-                    <a href="feedback.html" tabindex="0" class="node-group" aria-label="Go to Feedback Page">
-                        <title>Feedback Page</title>
-                        <rect x="490" y="200" width="160" height="50" rx="10" class="node-rect" />
-                        <text x="570" y="225" class="node-text">Feedback</text>
+                    <a href="c3.html" class="node-group" aria-label="Go to User c1 Page">
+                        <rect x="515" y="380" width="150" height="50" class="node-rect" />
+                        <text x="595" y="405" class="node-text">Content 3</text>
                     </a>
 
-                    <!-- Team -->
-                    <a href="team.html" tabindex="0" class="node-group" aria-label="Go to Team Page">
-                        <title>Team Page</title>
-                        <rect x="630" y="200" width="160" height="50" rx="10" class="node-rect" />
-                        <text x="710" y="225" class="node-text">Team</text>
-                    </a>
-
-                    <!-- User Profile -->
-                    <a href="user_profile.html" tabindex="0" class="node-group" aria-label="Go to User Profile Page">
-                        <title>User Profile Page</title>
-                        <rect x="770" y="200" width="160" height="50" rx="10" class="node-rect" />
-                        <text x="850" y="225" class="node-text">User Profile</text>
-                    </a>
-
-                    <!-- Sub Nodes Layer 2 (Content pages linked to Action Impact for example, or separate) -->
-                    <!-- Content Page 1 -->
-                    <a href="content1.html" tabindex="0" class="node-group" aria-label="Go to Content Page 1">
-                        <title>Content Page 1</title>
-                        <rect x="320" y="350" width="160" height="50" rx="10" class="node-rect" />
-                        <text x="400" y="375" class="node-text">Content - Flora</text>
-                    </a>
-
-                    <!-- Content Page 2 -->
-                    <a href="content2.html" tabindex="0" class="node-group" aria-label="Go to Content Page 2">
-                        <title>Content Page 2</title>
-                        <rect x="520" y="350" width="160" height="50" rx="10" class="node-rect" />
-                        <text x="600" y="375" class="node-text">Content - Fauna</text>
+                    <a href="c4.html" class="node-group" aria-label="Go to User c1 Page">
+                        <rect x="680" y="380" width="150" height="50" class="node-rect" />
+                        <text x="760" y="405" class="node-text">Content 4</text>
                     </a>
 
                 </svg>

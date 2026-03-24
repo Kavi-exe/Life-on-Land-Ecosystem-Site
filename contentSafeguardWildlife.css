@@ -1,5 +1,5 @@
 main {
-    margin-top: 60px;
+    margin-top: 20px;
     padding: 30px;
     color: white;
 }
@@ -28,7 +28,13 @@ h2 {
     margin-bottom: 15px;
 }
 
-p {
+#importance p,
+#biodiversity p,
+#threats p,
+#climate p ,
+#protection p, 
+#laws p, 
+#how-to-help p {
     line-height: 1.8;
     font-family: 'f1';
     letter-spacing: 1px;
@@ -36,7 +42,13 @@ p {
     color: #ccc;
 }
 
+.back-holder {
+    margin-top: 60px;
+}
+
+
 .back{
+    position: relative;
     border: 2px solid #fff;
     padding-right: 10px;
     padding-top: 10px;

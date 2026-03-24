@@ -7,6 +7,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
 }
 
 html {
@@ -180,6 +181,8 @@ nav li a:not(.active):hover::after { /*animation after part*/
     margin-bottom: 15px;
     line-height: 1.5;
     color: #ddd;
+    font-family: 'f1';
+    letter-spacing: 1px;
 }
 
 .card ul {
@@ -190,6 +193,8 @@ nav li a:not(.active):hover::after { /*animation after part*/
 
 .card ul li {
     margin-bottom: 8px;
+    font-family: 'f1';
+    letter-spacing: 1px;
 }
 
 
@@ -236,13 +241,114 @@ nav li a:not(.active):hover::after { /*animation after part*/
     color: rgb(234, 234, 234);
 }
 
-footer { /*footer styles*/
-    color: rgb(0, 0, 0);
+footer {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100px;
-    background-color: #ffffff;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background: linear-gradient(#000000, #525252);
+    color: #e2e8f0;
+    padding: 60px 80px;
     font-family: 'f1';
-    letter-spacing: 3px;
+    letter-spacing: 1px;
 }
+
+.footer-left {
+    flex: 1;
+    min-width: 240px;
+    margin-left: 50px
+}
+
+.footer-middle2 {
+    flex: 1;
+    min-width: 250px;
+    margin-left: 200px
+}
+
+.footer-middle {
+    flex: 1;
+    min-width: 200px;
+    margin-left: 180px
+}
+
+
+.footer-right {
+    flex: 1;
+    min-width: 180px;
+    margin-left: 40px;
+}
+
+.footer-logo {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #ffffff;
+}
+
+
+.footer-topic {
+    margin-bottom: 15px;
+    font-size: 16px;
+    text-transform: uppercase;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+
+.footer-topic::after {
+    content: "";
+    width: 40px;
+    height: 2px;
+    background: #ffffff;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+}
+
+
+.footer-right a,
+.footer-middle a,
+.footer-middle2 a {
+    display: block;
+    text-decoration: none;
+    color: #cbd5e1;
+    margin: 6px 0;
+    transition: all 0.3s ease;
+    line-height: 22px;
+}
+
+
+
+
+.footer-right a:hover,
+.footer-middle a:hover {
+    color: #898989;
+    transform: translateX(5px);
+}
+
+.footer-middle2 a:hover {
+    text-decoration: underline;
+}
+
+.footer-mission {
+    color: #b3b3b3;
+    line-height: 1.6;
+    max-width: 300px;
+}
+
+footer::after {
+    content: "2026 Land Verse • All rights reserved";
+    display: block;
+    width: 100%;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255,255,255,0.1);
+    text-align: center;
+    font-size: 14px;
+    color: #a4a4a4;
+}
+
+.symbol {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+

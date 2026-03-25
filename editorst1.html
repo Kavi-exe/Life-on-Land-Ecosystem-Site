@@ -41,61 +41,95 @@
 
             <section id="home">
                 <h2>Home Page</h2>
+
                 <p>
                     The Home Page acts as the central entry point of the website, introducing the theme 
                     "Life on Land" and providing users with an overview of key environmental topics. 
-                    The design focuses on clarity, accessibility, and visual appeal to immediately 
-                    engage users.
+                    The structure is created using semantic HTML tags such as 
+                    <code>&lt;header&gt;</code>, <code>&lt;main&gt;</code>, and 
+                    <code>&lt;section&gt;</code> to organize content clearly and improve accessibility.
                 </p>
 
                 <p>
-                    A hero section with a large background title ("Land Verse") and a short tagline 
-                    creates a strong first impression. This is followed by a structured "Mission & Goals" 
-                    section that presents four main topics: forest protection, soil health restoration, 
-                    wildlife conservation, and sustainable land use.
+                    A hero section is created using a <code>&lt;section id="home"&gt;</code> element, 
+                    which contains a large title displayed using the <code>&lt;h1&gt;</code> tag 
+                    ("Land Verse") and a tagline using a <code>&lt;p&gt;</code> tag. This creates 
+                    a strong visual hierarchy and first impression.
                 </p>
 
                 <p>
-                    Each topic is displayed using a card layout. These cards include images, headings, 
-                    descriptions, and actionable bullet points. This approach improves readability and 
-                    allows users to quickly understand key ideas without overwhelming them with text.
+                    The "Mission & Goals" section is structured using 
+                    <code>&lt;div class="cards-container"&gt;</code>, which contains multiple 
+                    <code>&lt;div class="card"&gt;</code> elements. Each card includes:
+                    <br>• <code>&lt;img src=""&gt;</code> for images  
+                    <br>• <code>&lt;h3&gt;</code> for headings  
+                    <br>• <code>&lt;p&gt;</code> for descriptions  
+                    <br>• <code>&lt;ul&gt;</code> and <code>&lt;li&gt;</code> for action points  
                 </p>
 
                 <p>
-                    One of the cards is interactive and links directly to a content page, improving 
-                    navigation and encouraging users to explore deeper information. The layout was 
-                    designed using Flexbox to ensure proper alignment and responsiveness across 
-                    different screen sizes.
+                    One of the cards is wrapped inside an <code>&lt;a href=""&gt;</code> tag, 
+                    making the entire card clickable and linking it to another content page. 
+                    This improves navigation and encourages user interaction.
                 </p>
 
                 <p>
-                    The navigation bar at the top provides easy access to all pages, while the footer 
-                    includes contact information and additional links, ensuring a complete and 
-                    user-friendly structure.
+                    The layout is designed using CSS Flexbox, with properties such as 
+                    <code>display: flex;</code>, <code>justify-content</code>, and 
+                    <code>align-items</code> to align the cards properly and ensure responsiveness 
+                    across different screen sizes.
                 </p>
-                
+
+                <p>
+                    The navigation bar is built using <code>&lt;nav&gt;</code>, 
+                    <code>&lt;ul&gt;</code>, and <code>&lt;li&gt;</code> elements, with links 
+                    created using <code>&lt;a href=""&gt;</code>. The active page is highlighted 
+                    using a class such as <code>class="active"</code>.
+                </p>
+
+                <p>
+                    The footer is created using the <code>&lt;footer&gt;</code> tag and contains 
+                    multiple <code>&lt;div&gt;</code> sections for contact details, editors, 
+                    and page links, ensuring a consistent structure across the website.
+                </p>
+
+                <p class="button-label">Go to Home page</p>
                 <a href="home.html">Go to Home Page</a>
             </section>
 
 
             <section id="gallery">
                 <h2>Gallery Page</h2>
+
                 <p>
                     The Gallery Page is designed to visually represent important environmental topics 
-                    through images and short descriptions. It enhances user engagement by combining 
-                    visual elements with informative content.
+                    through images and short descriptions. The structure is created using 
+                    <code>&lt;section&gt;</code>, <code>&lt;div&gt;</code>, and 
+                    <code>&lt;p&gt;</code> tags to organize content clearly and improve readability.
                 </p>
 
                 <p>
-                    The page displays multiple image cards, each containing a title, image, and 
-                    descriptive text. These topics include forest conservation, wildlife protection, 
-                    reforestation, and land degradation.
+                    The page displays multiple image cards using 
+                    <code>&lt;div class="img-box"&gt;</code> containers. Each card includes a title 
+                    using <code>&lt;p&gt;</code>, an image using the 
+                    <code>&lt;img src=""&gt;</code> tag, and a description using another 
+                    <code>&lt;p&gt;</code>. These topics include forest conservation, wildlife 
+                    protection, reforestation, and land degradation.
                 </p>
 
                 <p>
                     A key feature of this page is the interactive modal system implemented using 
-                    JavaScript. When a user clicks on an image, a popup (modal) appears showing 
-                    a larger version of the image along with its title and description.
+                    JavaScript. The modal is created using a hidden 
+                    <code>&lt;div id="modal"&gt;</code> element. Inside it, elements like 
+                    <code>&lt;img&gt;</code>, <code>&lt;h2&gt;</code>, and <code>&lt;p&gt;</code> 
+                    are used to display the selected image, title, and description dynamically.
+                </p>
+
+                <p>
+                    When a user clicks on an image, JavaScript event listeners are triggered, 
+                    updating the modal content by changing attributes such as 
+                    <code>src</code> of the <code>&lt;img&gt;</code> tag and text content 
+                    inside <code>&lt;h2&gt;</code> and <code>&lt;p&gt;</code>.
                 </p>
 
                 <p>
@@ -105,43 +139,140 @@
                 </p>
 
                 <p>
-                    The layout is structured using CSS for spacing and alignment, ensuring that 
-                    images are displayed neatly and consistently across different screen sizes.
+                    The layout is structured using CSS, particularly Flexbox with 
+                    <code>display: flex;</code>, to arrange image cards neatly. Spacing is 
+                    controlled using properties like <code>margin</code> and <code>gap</code>, 
+                    ensuring consistent alignment across different screen sizes.
                 </p>
 
+                <p>
+                    Additional styling such as <code>:hover</code> effects and 
+                    <code>transform</code> properties are used to enhance interactivity, 
+                    making images more engaging when users interact with them.
+                </p>
+
+                <p class="button-label">Go to Gallery page</p>
                 <a href="gallery.html">Go to Gallery Page</a>
             </section>
 
 
-            <section>
+            <section id="content">
+                <h2>Content Page – Protect Forests</h2>
+
+                <p>
+                    The Content Page titled "Protect Forests" focuses on raising awareness about the importance 
+                    of forests and the need for sustainable environmental practices. The page structure is built 
+                    using semantic HTML tags such as <code>&lt;main&gt;</code>, 
+                    <code>&lt;section&gt;</code>, and <code>&lt;h1&gt;</code> to organize content clearly 
+                    and improve accessibility.
+                </p>
+
+                <p>
+                    The layout is divided into multiple sections using 
+                    <code>&lt;section id=""&gt;</code> elements, each addressing a specific aspect of forest 
+                    conservation. These sections include headings created with <code>&lt;h2&gt;</code> and 
+                    paragraphs using <code>&lt;p&gt;</code> to present information in a structured format.
+                </p>
+
+                <p>
+                    Each section follows a consistent design using a split layout created with 
+                    <code>&lt;div class="text"&gt;</code> and <code>&lt;div class="image"&gt;</code>. 
+                    Images are displayed using the <code>&lt;img src=""&gt;</code> tag, while text 
+                    content is placed in paragraphs. This side-by-side layout is controlled using 
+                    CSS Flexbox (<code>display: flex;</code>) to improve readability.
+                </p>
+
+                <p>
+                    The alternating layout is achieved using a class such as 
+                    <code>class="content-section reverse"</code>, where the CSS property 
+                    <code>flex-direction: row-reverse;</code> switches the position of text and 
+                    images. This prevents the page from looking repetitive and improves visual design.
+                </p>
+
+                <p>
+                    An internal navigation bar is created using a 
+                    <code>&lt;div class="internal-nav"&gt;</code> containing multiple 
+                    <code>&lt;a href="#section-id"&gt;</code> links. These links allow users 
+                    to quickly jump to sections like <code>#importance</code> or 
+                    <code>#climate</code>, improving navigation within the page.
+                </p>
+
+                <p>
+                    The page also incorporates interactive design elements such as hover effects. 
+                    For example, images styled with <code>.content-img</code> use 
+                    <code>transform: scale()</code> on <code>:hover</code> to create a zoom effect, 
+                    while content sections use <code>transform: translateY()</code> and 
+                    <code>box-shadow</code> to create a lifting animation.
+                </p>
+
+                <p>
+                    The design is built using HTML for structure and CSS for styling. Layout is 
+                    controlled using Flexbox properties such as <code>display: flex;</code>, 
+                    <code>gap</code>, and <code>justify-content</code>. Additional styling like 
+                    <code>background: rgba()</code> and <code>backdrop-filter: blur()</code> 
+                    creates a modern glass effect.
+                </p>
+
+                <p>
+                    Navigation between pages is implemented using the 
+                    <code>&lt;a href="contentProtectForests.html"&gt;</code> tag, allowing users 
+                    to move between different parts of the website easily.
+                </p>
+
+                <p>
+                    Overall, the Content Page combines structured HTML elements with CSS styling 
+                    and interactive effects to create an informative, visually appealing, and 
+                    user-friendly experience.
+                </p>
+
+                <p class="button-label">Go to Content page</p>
+                <a href="contentProtectForests.html">Go to Content Page</a>
+            </section>
+
+
+            <section id="technical-description">
                 <h2>Technical Description</h2>
+
                 <p>
                     The website was developed using HTML for structure, CSS for styling, and 
-                    JavaScript for interactivity. External CSS files (global.css, home.css, 
-                    gallery.css) were used to maintain consistency and improve code organization.
+                    JavaScript for interactivity. For example, structural elements such as 
+                    <code>&lt;header&gt;</code>, <code>&lt;main&gt;</code>, 
+                    <code>&lt;section&gt;</code>, and <code>&lt;footer&gt;</code> are used 
+                    to organize the layout. External CSS files like <code>global.css</code>, 
+                    <code>home.css</code>, and <code>gallery.css</code> are linked using the 
+                    <code>&lt;link&gt;</code> tag to maintain consistency and improve code organization.
                 </p>
 
                 <p>
-                    Flexbox was used for layout design, particularly for aligning navigation 
-                    elements and arranging content sections. This allowed for a responsive 
-                    design that adapts to different screen sizes.
+                    Flexbox was used for layout design using properties such as 
+                    <code>display: flex;</code>, <code>justify-content</code>, and 
+                    <code>align-items</code>. For example, navigation menus are structured using 
+                    <code>&lt;nav&gt;</code>, <code>&lt;ul&gt;</code>, and 
+                    <code>&lt;li&gt;</code> tags, and styled with Flexbox to align items properly. 
+                    This allows the layout to adjust responsively across different screen sizes.
                 </p>
 
                 <p>
-                    The Gallery Page uses JavaScript to handle user interactions. Event listeners 
-                    detect when an image is clicked, and dynamically update the modal content 
-                    (image source, title, and description).
+                    The Gallery Page uses JavaScript to handle user interactions. Images are 
+                    created using the <code>&lt;img&gt;</code> tag, and when clicked, JavaScript 
+                    event listeners update elements inside a modal such as 
+                    <code>&lt;div id="modal"&gt;</code>, <code>&lt;img&gt;</code>, 
+                    <code>&lt;h2&gt;</code>, and <code>&lt;p&gt;</code>. This allows dynamic 
+                    content changes without reloading the page.
                 </p>
 
                 <p>
-                    The navigation system is consistent across all pages, improving usability. 
-                    Reusable components like headers and footers were implemented to maintain 
-                    a uniform design throughout the website.
+                    The navigation system is consistent across all pages using 
+                    <code>&lt;a href=""&gt;</code> links. The active page is highlighted using 
+                    a class such as <code>class="active"</code>. Reusable components like 
+                    headers and footers are implemented using <code>&lt;header&gt;</code> 
+                    and <code>&lt;footer&gt;</code> tags, ensuring a uniform design throughout 
+                    the website.
                 </p>
             </section>
 
 
-            <section>
+            <section id="challenges">
                 <h2>Challenges and Lessons Learned</h2>
                 <p>
                     One of the main challenges was ensuring consistency across multiple pages 
@@ -168,12 +299,114 @@
                 </p>
             </section>
 
+            <section id="compliance">
+                <h2>Compliance</h2>
 
-            <section>
+                <p>
+                    This website was developed in accordance with the given coursework guidelines and 
+                    requirements. All pages follow a consistent structure, including a navigation bar, 
+                    main content area, and footer, ensuring a uniform user experience across the site.
+                </p>
+
+                <p>
+                    The design maintains accessibility by using clear fonts, readable text sizes, and 
+                    sufficient color contrast between text and background. Navigation is simple and 
+                    intuitive, allowing users to easily move between pages using the menu and internal links.
+                </p>
+
+                <p>
+                    All images used in the website are sourced from free and copyright-free platforms, 
+                    and proper references have been included where necessary. No copyrighted material 
+                    has been used without permission.
+                </p>
+
+                <p>
+                    The website is responsive and designed using modern CSS techniques such as Flexbox, 
+                    ensuring that content is displayed properly on different screen sizes and devices.
+                </p>
+
+                <p>
+                    External files such as CSS and JavaScript have been properly linked, and the code is 
+                    organized and structured to improve readability and maintainability. Reusable components 
+                    like headers and footers are consistently used throughout the website.
+                </p>
+
+                <p>
+                    Overall, the website meets the required web development standards and follows best 
+                    practices in design, usability, and content organization.
+                </p>
+            </section>
+
+            <section id="meeting-log">
+                <h2>Meeting Log</h2>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Number</th>
+                            <th>Date</th>
+                            <th>Format</th>
+                            <th>Discussion</th>
+                            <th>Attendance</th>
+                            <th>Tasks Assigned</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td class="date">2026-03-12</td>
+                            <td>Face-to-face</td>
+                            <td>Discussed project topic and selected "Life on Land" theme</td>
+                            <td>Attended</td>
+                            <td>Each member assigned a page to develop</td>
+                        </tr>
+
+                        <tr>
+                            <td>2</td>
+                            <td class="date">2026-03-14</td>
+                            <td>Face-to-face</td>
+                            <td>Planned layout and design for Home and Gallery pages</td>
+                            <td>Attended</td>
+                            <td>Started designing Home Page and Gallery Page</td>
+                        </tr>
+
+                        <tr>
+                            <td>3</td>
+                            <td class="date">2026-03-18</td>
+                            <td>Face-to-face</td>
+                            <td>Worked on content pages and styling</td>
+                            <td>Attended</td>
+                            <td>Completed Content Page and added images</td>
+                        </tr>
+
+                        <tr>
+                            <td>4</td>
+                            <td class="date">2026-03-22</td>
+                            <td>Face-to-face</td>
+                            <td>Implemented interactivity and tested pages</td>
+                            <td>Attended</td>
+                            <td>Debugged errors and improved responsiveness</td>
+                        </tr>
+
+                        <tr>
+                            <td>5</td>
+                            <td class="date">2026-03-27</td>
+                            <td>Face-to-face</td>
+                            <td>Final review and improvements</td>
+                            <td>Attended</td>
+                            <td>Completed Page Editor and final submission</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+
+            <section id="references">
                 <h2>References</h2>
                 <ul class="ref">
-                    <li>W3Schools HTML – https://www.w3schools.com/html/</li>
-                    <li>W3Schools CSS – https://www.w3schools.com/css/</li>
+                    <li>W3Schools HTML - https://www.w3schools.com/html/</li>
+                    <li>W3Schools CSS - https://www.w3schools.com/css/</li>
                     <li>Free image resources - https://unsplash.com/</li>
                 </ul>
             </section>
@@ -182,19 +415,24 @@
 
         <!-- LEFT SIDE NAV -->
         <aside>
-            
-            <h3 class="con">Contents</h3>
-            <ul>
-                <li><a href="#home">Home Page</a></li>
-                <li><a href="#gallery">Gallery Page</a></li>
-            </ul>
+            <div class="aside-inner">
+                <h3 class="con">Contents</h3>
+                <ul>
+                    <li><a href="#home">Home Page</a></li>
+                    <li><a href="#gallery">Gallery Page</a></li>
+                    <li><a href="#content">Content</a></li>
+                    <li><a href="#technical-description">Technical Description</a></li>
+                    <li><a href="#challenges">Challenges & Lessons</a></li>
+                    <li><a href="#compliance">Complience</a></li>
+                    <li><a href="#meeting-log">Meeting Log Table</a></li>
+                    <li><a href="#references">References</a></li>
+                </ul>
+            </div>
             
         </aside>
-
     </div>
 
 <a href="#top" class="top-btn">Top ↑</a>
-
 <footer>
     <div class="footer-left">
         <h2 class="footer-logo">Land Verse</h2>

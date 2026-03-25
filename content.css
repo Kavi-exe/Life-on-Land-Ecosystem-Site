@@ -4,7 +4,7 @@ main {
 }
 
 
-h1 {
+.main-topic {
     text-align: center;
     font-size: 40px;
     margin-bottom: 40px;
@@ -12,7 +12,7 @@ h1 {
     letter-spacing: 3px;
 }
 
-h1::after {
+.main-topic::after {
     content: "";
     width: 120px;
     height: 3px;
@@ -21,7 +21,7 @@ h1::after {
     margin: 10px auto;
 }
 
-h2 {
+.topic {
     font-family: 'f1';
     letter-spacing: 2px;
     margin-bottom: 15px;
@@ -29,7 +29,7 @@ h2 {
     margin-left: 50px;
 }
 
-p {
+.para {
     text-align: justify;
     line-height: 1.8;
     font-family: 'f1';

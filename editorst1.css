@@ -1,0 +1,404 @@
+@font-face{
+    font-family: 'f1';
+    src: url(fonts/GiantImpact-Regular.ttf);
+}
+
+html {
+    overflow-y: scroll; /*added*/
+}
+
+body {
+    background-color: black; /*added*/
+    font-family: Arial, sans-serif;
+    margin-top: 100px; /*edited*/
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: row-reverse;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+main {
+    flex: 3;
+}
+aside {
+    flex: 1;
+    background-color: #f4f4f4;
+    padding: 15px;
+    border: 1px solid #ddd;
+    margin-right: 20px;
+}
+
+h1 {
+    color: #ffffff;
+    text-align: center;
+    font-size: 50px;
+    font-family: 'f1';
+    margin-bottom: -10px;
+    letter-spacing: 5px;
+    position: relative;
+    justify-content: center;
+}
+
+.st-name {
+    color: #ffffff;
+    text-align: center;
+    font-size: 30px;
+    font-family: 'f1';
+    letter-spacing: 3px;
+    position: relative;
+    justify-content: center;
+    cursor: pointer;
+}
+
+h2{
+    color: #000000;
+    font-size: 30px;
+    font-family: 'f1';
+    letter-spacing: 2px;
+    font-weight: bold;
+    margin-left: 4px;
+}
+
+.con {
+    color: #000000;
+    font-size: 20px;
+    font-family: 'f1';
+    letter-spacing: 2px;
+    font-weight: bold;
+    margin-left: 30px;
+}
+
+section {
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    background-color: #fafafa;
+}
+
+header {  /*header changes*/
+    display: flex;
+    position: fixed;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.7);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    z-index: 1000;
+}
+
+
+.left-part { /*left part of the nav bar*/
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    margin-top: 40px;
+}
+
+.right-part { /*right part of the nav bar*/
+    display: flex;
+    justify-content: right;
+    margin-right: 100px;
+    margin-top: 10px;
+}
+
+
+.nav_logo { /*nav bar logo changes*/
+    color: white;
+    font-size: 26px;
+    font-family: 'f1';
+    margin-top: -34px;
+    margin-left: 50px;
+    text-align: center;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+nav ul { /*nav bar changes*/
+    display: flex;
+    list-style-type: none;
+    list-style: none;
+    padding-bottom: 10px;
+    overflow: hidden;
+}
+
+nav li { /*nav bar changes*/
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 8px;
+}
+
+nav li a { /* nav bar changes */
+
+    display: block;
+    color: #ffffff;
+    font-size: 14px;
+    text-decoration: none;
+    font-weight: bold;
+    float: right;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 14px;
+    padding-right: 14px;
+    border-radius: 12px;
+    position: relative;
+}
+
+nav li a::after {  /*animated underline*/
+
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 0%;
+    height: 2px;
+    background-color: #ffffff7f;
+    transition: width 0.4s ease;
+}
+
+nav li a:not(.active):hover::after { /*animation after part*/
+    width: 100%;
+}
+
+.active {
+    color: #ffffff;
+    box-shadow: rgba(255, 255, 255, 0.493) 0px 2px 4px, rgba(95, 95, 95, 0.3) 0px 7px 13px -3px, rgba(255, 255, 255, 0.2) 0px -3px 0px inset;
+}
+
+.ref li{
+    list-style: none;
+    padding-bottom: 9px;
+}
+aside {
+    height: 240vh;
+}
+aside a{
+    color: black;
+    text-decoration : none;
+}
+
+aside li{
+    padding-bottom: 4px;
+}
+
+aside li a:hover{
+    text-decoration: underline;
+}
+
+.stud {
+    text-align: center;
+    line-height: 0;
+    background-color: #cbccc2ef;
+    color: white;
+    margin-top: 8px;
+}
+
+.top {
+    position: fixed;
+    bottom: 5%;
+    right: 5%;
+}
+
+        
+#home a {
+    padding: 10px 20px; /* Adds padding for button-like feel */
+    background-color: #000000; /* Button color */
+    color: white; /* Text color */
+    text-decoration: none; /* Removes underline */
+    border-radius: 20px; /* Rounds the corners */
+    font-size: 12px; /* Adjust font size */
+    font-weight: bold; /* Make the text stand out */
+}
+
+
+#gallery a {
+    padding: 10px 20px; /* Adds padding for button-like feel */
+    background-color: #000000; /* Button color */
+    color: white; /* Text color */
+    text-decoration: none; /* Removes underline */
+    border-radius: 20px; /* Rounds the corners */
+    font-size: 12px; /* Adjust font size */
+    font-weight: bold; /* Make the text stand out */
+}
+
+#home a:hover {
+    background-color: #444444; /* Darker shade on hover */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow */
+}
+
+#gallery a:hover {
+    background-color: #444444; /* Darker shade on hover */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow */
+}
+
+img{
+    width: 90%;
+}
+
+
+table{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+th, td{
+    padding: 4px;
+    border: 1px solid black;
+}
+thead{
+    background-color: #333;
+    color: azure;
+}
+
+.top-btn {
+    text-decoration: none;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(12px);
+    color: #ffffff;
+    padding: 12px 18px;
+    border-radius: 50px;
+    font-weight: bold;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+    font-family: 'f1';
+    letter-spacing: 2px;
+    transition: all 0.3s ease;
+    mix-blend-mode: difference;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(20px);
+}
+
+.top-btn.show {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.top-btn:hover {
+    transform: scale(1.1);
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 10px 35px rgba(255, 255, 255, 0.25);
+}
+
+.top-btn:active {
+    color: rgb(234, 234, 234);
+}
+
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background: linear-gradient(#000000, #525252);
+    color: #e2e8f0;
+    padding: 60px 80px;
+    font-family: 'f1';
+    letter-spacing: 1px;
+}
+
+.footer-left {
+    flex: 1;
+    min-width: 240px;
+    margin-left: 50px
+}
+
+.footer-middle2 {
+    flex: 1;
+    min-width: 270px;
+    margin-left: 180px
+}
+
+.footer-middle {
+    flex: 1;
+    min-width: 200px;
+    margin-left: 150px
+}
+
+
+.footer-right {
+    flex: 1;
+    min-width: 180px;
+    margin-left: 40px;
+}
+
+.footer-logo {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #ffffff;
+}
+
+
+.footer-topic {
+    margin-bottom: 15px;
+    font-size: 16px;
+    text-transform: uppercase;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+
+.footer-topic::after {
+    content: "";
+    width: 40px;
+    height: 2px;
+    background: #ffffff;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+}
+
+
+.footer-right a,
+.footer-middle a,
+.footer-middle2 a {
+    display: block;
+    text-decoration: none;
+    color: #cbd5e1;
+    margin: 6px 0;
+    transition: all 0.3s ease;
+    line-height: 22px;
+}
+
+
+
+
+.footer-right a:hover,
+.footer-middle a:hover {
+    color: #898989;
+    transform: translateX(5px);
+}
+
+.footer-middle2 a:hover {
+    text-decoration: underline;
+}
+
+.footer-mission {
+    color: #b3b3b3;
+    line-height: 1.6;
+    max-width: 300px;
+}
+
+footer::after {
+    content: "2026 Land Verse • All rights reserved";
+    display: block;
+    width: 100%;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255,255,255,0.1);
+    text-align: center;
+    font-size: 14px;
+    color: #a4a4a4;
+}
+
+.symbol {
+    font-family: Arial, Helvetica, sans-serif;
+}

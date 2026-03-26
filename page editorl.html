@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Editor</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        main {
+            margin-top: 120px;
+            padding: 40px;
+            color: white;
+        }
+
+        .editor-title {
+            text-align: center;
+            font-size: 40px;
+            font-family: 'f1';
+            letter-spacing: 3px;
+            margin-bottom: 30px;
+        }
+
+        .section-box {
+            background: rgba(255,255,255,0.05);
+            padding: 25px;
+            border-radius: 15px;
+            margin-bottom: 30px;
+        }
+
+        .section-box h2 {
+            font-family: 'f1';
+            margin-bottom: 15px;
+            letter-spacing: 2px;
+        }
+
+        .section-box p, li {
+            color: #ddd;
+            line-height: 1.6;
+        }
+
+        .links a {
+            display: inline-block;
+            margin-right: 15px;
+            margin-top: 10px;
+            color: #fff;
+            border: 1px solid #fff;
+            padding: 6px 12px;
+            border-radius: 8px;
+        }
+
+        .links a:hover {
+            background: white;
+            color: black;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+        }
+
+        th, td {
+            border: 1px solid #555;
+            padding: 10px;
+        }
+
+        th {
+            background: #222;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <div class="left-part">
+        <h2 class="nav_logo">LIFE ON LAND</h2>
+    </div>
+
+    <div class="right-part">
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Gallery</a></li>
+                <li><a href="#">Profile</a></li>
+                <li><a class="active" href="#">Editor</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<main>
+
+    <h1 class="editor-title">PAGE EDITOR</h1>
+
+    <!-- STUDENT INFO -->
+    <div class="section-box">
+        <h2>Student Details</h2>
+        <p><strong>Name:</strong> Your Name</p>
+        <p><strong>Role:</strong> Student 3 – Content Page Developer</p>
+    </div>
+
+    <!-- TASKS -->
+    <div class="section-box">
+        <h2>Completed Tasks</h2>
+        <ul>
+            <li>Created Content Page (Life on Land)</li>
+            <li>Developed User Profile Page</li>
+            <li>Implemented navigation and internal links</li>
+            <li>Styled pages using CSS</li>
+        </ul>
+    </div>
+
+    <!-- CONTENT PAGE -->
+    <div class="section-box">
+        <h2>Content Page</h2>
+
+        <h3>HTML Structure</h3>
+        <p>
+            I used semantic elements such as header, main, and section to organize content clearly.
+        </p>
+
+        <h3>CSS Techniques</h3>
+        <p>
+            Flexbox was used for layout alignment and spacing. Colors were chosen to match the dark theme.
+        </p>
+
+        <h3>Design Rationale</h3>
+        <p>
+            The page was structured to improve readability and ensure users can easily understand content.
+        </p>
+
+        <div class="links">
+            <a href="#" target="_blank">View Page</a>
+            <a href="#" target="_blank">Validation</a>
+        </div>
+    </div>
+
+    <!-- PROFILE -->
+    <div class="section-box">
+        <h2>User Profile Page</h2>
+
+        <h3>HTML Structure</h3>
+        <p>
+            Structured sections were used to display user details and actions clearly.
+        </p>
+
+        <h3>CSS Techniques</h3>
+        <p>
+            Flexbox was used to center content and create a clean layout.
+        </p>
+
+        <h3>Design Rationale</h3>
+        <p>
+            The design focuses on simplicity and usability.
+        </p>
+
+        <div class="links">
+            <a href="#" target="_blank">View Page</a>
+            <a href="#" target="_blank">Validation</a>
+        </div>
+    </div>
+
+    <!-- CHALLENGES -->
+    <div class="section-box">
+        <h2>Challenges & Lessons Learned</h2>
+        <p>
+            One challenge was aligning elements properly. I solved this using Flexbox.
+            I also improved my understanding of layout and responsive design.
+        </p>
+    </div>
+
+    <!-- ACCESSIBILITY -->
+    <div class="section-box">
+        <h2>Accessibility</h2>
+        <ul>
+            <li>Used semantic HTML</li>
+            <li>Maintained good color contrast</li>
+            <li>Used readable font sizes</li>
+            <li>Structured headings properly</li>
+        </ul>
+    </div>
+
+    <!-- COMPLIANCE -->
+    <div class="section-box">
+        <h2>JANET Compliance</h2>
+        <p>
+            All content is appropriate and educational. External resources are referenced properly.
+            The project follows ethical and academic standards.
+        </p>
+    </div>
+
+    <!-- LOG -->
+    <div class="section-box">
+        <h2>Meeting Log</h2>
+
+        <table>
+            <tr>
+                <th>Date</th>
+                <th>Format</th>
+                <th>Objective</th>
+                <th>Attended</th>
+                <th>Contribution</th>
+            </tr>
+
+            <tr>
+                <td>23 Nov</td>
+                <td>Face-to-face</td>
+                <td>Select topic</td>
+                <td>Yes</td>
+                <td>Chose SDG topic</td>
+            </tr>
+
+            <tr>
+                <td>30 Nov</td>
+                <td>Online</td>
+                <td>Design</td>
+                <td>Yes</td>
+                <td>Suggested layout</td>
+            </tr>
+
+            <tr>
+                <td>7 Dec</td>
+                <td>Hybrid</td>
+                <td>Progress</td>
+                <td>No</td>
+                <td>Reviewed later</td>
+            </tr>
+        </table>
+    </div>
+
+    <!-- REFERENCES -->
+    <div class="section-box">
+        <h2>References</h2>
+        <ul>
+            <li>W3Schools – HTML & CSS</li>
+            <li>MDN Web Docs</li>
+            <li>Lecture Notes</li>
+        </ul>
+    </div>
+
+</main>
+
+<footer>
+    <p>PAGE EDITOR</p>
+</footer>
+
+</body>
+</html>

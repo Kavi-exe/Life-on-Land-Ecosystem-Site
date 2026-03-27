@@ -24,13 +24,6 @@ body {
 main {
     flex: 3;
 }
-aside {
-    flex: 1;
-    background-color: #f4f4f4;
-    padding: 15px;
-    border: 1px solid #ddd;
-    margin-right: 20px;
-}
 
 h1 {
     color: #ffffff;
@@ -172,8 +165,17 @@ nav li a:not(.active):hover::after { /*animation after part*/
     list-style: none;
     padding-bottom: 9px;
 }
+
 aside {
-    height: 517vh;
+    flex: 1;
+    background-color: #f4f4f4;
+    padding: 15px;
+    border: 1px solid #ddd;
+    margin-right: 20px;
+}
+
+aside ul {
+    list-style: none;
 }
 
 .aside-inner {
@@ -271,9 +273,9 @@ table{
 }
 
 th, td{
-    padding: 8px;
+    padding: 16px;
     border: 1px solid black;
-    font-size: 10px;
+    font-size: 14px;
 }
 thead{
     background-color: #333;

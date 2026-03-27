@@ -247,6 +247,26 @@ aside li a:hover{
     font-weight: bold; /* Make the text stand out */
 }
 
+#feedback a {
+    padding: 10px 20px; /* Adds padding for button-like feel */
+    background-color: #000000; /* Button color */
+    color: white; /* Text color */
+    text-decoration: none; /* Removes underline */
+    border-radius: 20px; /* Rounds the corners */
+    font-size: 12px; /* Adjust font size */
+    font-weight: bold; /* Make the text stand out */
+}
+
+#team a {
+    padding: 10px 20px; /* Adds padding for button-like feel */
+    background-color: #000000; /* Button color */
+    color: white; /* Text color */
+    text-decoration: none; /* Removes underline */
+    border-radius: 20px; /* Rounds the corners */
+    font-size: 12px; /* Adjust font size */
+    font-weight: bold; /* Make the text stand out */
+}
+
 #home a:hover {
     background-color: #444444; /* Darker shade on hover */
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow */
@@ -261,6 +281,17 @@ aside li a:hover{
     background-color: #444444; /* Darker shade on hover */
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow */
 }
+
+#feedback a:hover {
+    background-color: #444444; /* Darker shade on hover */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow */
+}
+
+#team a:hover {
+    background-color: #444444; /* Darker shade on hover */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow */
+}
+
 
 img{
     width: 90%;

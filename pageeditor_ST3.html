@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Page Editor - Student 3</title>
+    <link rel="stylesheet" href="editorst1.css">
+</head>
+
+<body id="top">
+
+    <header>
+
+        <div class="left-part">
+                <h1 class="nav_logo">Land Verse</h1>
+            </div>
+            
+            <div class="right-part">
+                <nav>
+                    <ul>
+                        <li><a href = "home.html">Home</a></li>
+                        <li><a href = "gallery.html">Gallery</a></li>
+                        <li><a href = "action_impact_simulator.html">Action Impact</a></li>
+                        <li><a href = "feedback.html">Feedback</a></li>
+                        <li><a href = "team.html">Team</a></li>
+                        <li><a href = "sitemap.html">Sitemap</a></li>
+                        <li><a href = "user_profile.html">User Profile</a></li>
+                    </ul>
+                </nav>
+            </div>
+        
+    </header>
+
+
+    <h1>Page Editor</h1>
+    <p class="st-name">Lakvindu Menath (Student 3)</p>
+
+    <div class="container">
+
+        <!-- RIGHT SIDE CONTENT -->
+        <main>
+
+            <section id="feedback">
+                <h2>Feedback Page</h2>
+
+                <p>
+                    The Feedback Page allows users to share their thoughts and experiences with the "Life on Land" initiative. 
+                    The structure is built using semantic HTML elements including <code>&lt;section&gt;</code>, <code>&lt;form&gt;</code>, 
+                    <code>&lt;fieldset&gt;</code>, and <code>&lt;legend&gt;</code> to ensure accessibility and clear organization.
+                </p>
+
+                <p>
+                    I implemented a dynamic program directory using <code>&lt;div class="program-container"&gt;</code> containing multiple 
+                    <code>&lt;div class="card"&gt;</code> elements. Each card includes an image using <code>&lt;img&gt;</code> tag, 
+                    title with <code>&lt;h3&gt;</code>, description with <code>&lt;p&gt;</code>, and an interactive button. 
+                    A custom dropdown <code>&lt;select&gt;</code> allows users to filter programs by categories such as 
+                    "Most Popular", "Nearest", and "Student-Friendly".
+                </p>
+
+                <p>
+                    The feedback form collects personal details (name, email, telephone) and feedback-specific fields including 
+                    program selection and message. I integrated real-time character counting using JavaScript: an event listener 
+                    on the <code>&lt;textarea id="message"&gt;</code> updates the <code>&lt;small id="counter"&gt;</code> element 
+                    dynamically, displaying remaining characters with a maximum limit of 150 characters.
+                </p>
+
+                <p>
+                    Client-side validation was implemented to ensure name and email fields are not empty. Error messages appear 
+                    inside <code>&lt;div class="error"&gt;</code> elements. Upon successful submission, a success message is 
+                    displayed and the form resets automatically. The reviews section showcases user ratings using structured 
+                    <code>&lt;div class="review-card"&gt;</code> containers, providing social proof and encouraging user engagement.
+                </p>
+
+                <p>
+                    The design follows a dark theme with glassmorphism effects using <code>background: rgba()</code> and 
+                    <code>backdrop-filter: blur()</code>, consistent with the global aesthetic. Hover effects on cards and 
+                    form elements enhance interactivity. External CSS (<code>feedback.css</code>) manages layout with Flexbox, 
+                    while JavaScript (<code>feedback.js</code>) handles all interactive functionality.
+                </p>
+
+                <p class="button-label">Go to Feedback page</p>
+                <a href="feedback.html">Go to Feedback Page</a>
+                <br>
+                <br>
+                <p class="button-label">Go to Validation Page</p>
+                <a href="validationst3_feedback.html">Go to Validation Page</a>
+            </section>
+
+
+            <section id="team">
+                <h2>Team Page</h2>
+
+                <p>
+                    The Team Page introduces the four members behind Land Verse, highlighting their roles and individual 
+                    contributions to the project. The layout uses a Flex-based grid with <code>.team-container</code> to 
+                    display responsive member cards.
+                </p>
+
+                <p>
+                    Each <code>&lt;div class="team-card"&gt;</code> contains a profile image using <code>&lt;img&gt;</code> tag, 
+                    name with <code>&lt;h2&gt;</code>, role with <code>&lt;p&gt;</code>, and an expandable details section 
+                    that reveals contributions on hover or focus. This expandable feature is implemented using CSS transitions 
+                    with <code>max-height</code> animation, creating a smooth user experience.
+                </p>
+
+                <p>
+                    Accessibility was prioritized by including <code>tabindex="0"</code> on each card, making the hover effect 
+                    keyboard-navigable for users who rely on keyboard navigation. The contribution text provides specific 
+                    details about each student's assigned tasks, ensuring transparency about project responsibilities.
+                </p>
+
+                <p>
+                    All images include meaningful <code>alt</code> attributes describing each team member for screen reader 
+                    compatibility. The overall design follows the global typography with <code>font-family: 'f1'</code> and 
+                    color scheme, featuring a dark background with subtle box-shadow effects on hover to indicate interactivity.
+                </p>
+
+                <p class="button-label">Go to Team page</p>
+                <a href="team.html">Go to Team Page</a>
+                <br>
+                <br>
+                <p class="button-label">Go to Validation Page</p>
+                <a href="validationst3_team.html">Go to Validation Page</a>
+            </section>
+
+
+            <section id="content-page">
+                <h2>Content Page – Safeguarding Wildlife</h2>
+
+                <p>
+                    The Content Page titled "Safeguarding Wildlife" focuses on raising awareness about the importance of wildlife 
+                    conservation and the need for sustainable environmental practices. The page structure is built using semantic 
+                    HTML tags such as <code>&lt;main&gt;</code>, <code>&lt;section&gt;</code>, and <code>&lt;h1&gt;</code> to 
+                    organize content clearly and improve accessibility.
+                </p>
+
+                <p>
+                    The layout is divided into multiple sections using <code>&lt;section id=""&gt;</code> elements, each addressing 
+                    a specific aspect of wildlife conservation. These sections include headings created with <code>&lt;h2&gt;</code> 
+                    and paragraphs using <code>&lt;p&gt;</code> to present information in a structured format. Topics covered 
+                    include importance of wildlife, biodiversity and ecosystem balance, major threats to wildlife, impact of 
+                    climate change, wildlife protection methods, laws and conservation efforts, and how individuals can help.
+                </p>
+
+                <p>
+                    Each section follows a consistent design using a split layout created with <code>&lt;div class="text"&gt;</code> 
+                    and <code>&lt;div class="image"&gt;</code>. Images are displayed using the <code>&lt;img src=""&gt;</code> tag, 
+                    while text content is placed in paragraphs. This side-by-side layout is controlled using CSS Flexbox 
+                    (<code>display: flex;</code>) to improve readability and visual appeal.
+                </p>
+
+                <p>
+                    The alternating layout is achieved using a class such as <code>class="content-section reverse"</code>, where 
+                    the CSS property <code>flex-direction: row-reverse;</code> switches the position of text and images. This 
+                    prevents the page from looking repetitive and improves visual design by alternating content positioning.
+                </p>
+
+                <p>
+                    An internal navigation bar is created using a <code>&lt;div class="internal-nav"&gt;</code> containing multiple 
+                    <code>&lt;a href="#section-id"&gt;</code> links. These links allow users to quickly jump to sections like 
+                    <code>#importance</code>, <code>#biodiversity</code>, <code>#threats</code>, <code>#climate</code>, 
+                    <code>#protection</code>, <code>#laws</code>, and <code>#how-to-help</code>, improving navigation within the page.
+                </p>
+
+                <p>
+                    The page incorporates interactive design elements such as hover effects. For example, images styled with 
+                    <code>.content-img</code> use <code>transform: scale()</code> on <code>:hover</code> to create a zoom effect, 
+                    while content sections use <code>transform: translateY()</code> and <code>box-shadow</code> to create a 
+                    lifting animation when hovered, enhancing user engagement.
+                </p>
+
+                <p>
+                    The design is built using HTML for structure and CSS for styling. Layout is controlled using Flexbox properties 
+                    such as <code>display: flex;</code>, <code>gap</code>, and <code>justify-content</code>. Additional styling like 
+                    <code>background: rgba()</code> and <code>backdrop-filter: blur()</code> creates a modern glass effect that 
+                    makes the content visually appealing while maintaining readability.
+                </p>
+
+                <p class="button-label">Go to Content page</p>
+                <a href="content_ST3.html">Go to Content Page</a>
+                <br>
+                <br>
+                <p class="button-label">Go to Validation Page</p>
+                <a href="validationst3_content.html">Go to Validation Page</a>
+            </section>
+
+
+            <section id="technical-description">
+                <h2>Technical Description</h2>
+
+                <p>
+                    The website was developed using HTML5 for semantic structure, CSS3 for styling and responsive design, 
+                    and vanilla JavaScript for interactivity. Structural elements such as <code>&lt;header&gt;</code>, 
+                    <code>&lt;main&gt;</code>, <code>&lt;section&gt;</code>, and <code>&lt;footer&gt;</code> are used 
+                    consistently across all pages to organize content logically.
+                </p>
+
+                <p>
+                    External CSS files including <code>global.css</code>, <code>feedback.css</code>, <code>team.css</code>, 
+                    and <code>content.css</code> are linked using the <code>&lt;link&gt;</code> tag to maintain modularity 
+                    and improve code organization. This approach allows for easier maintenance and consistency across the website.
+                </p>
+
+                <p>
+                    For the Feedback Page, I implemented form validation without external libraries. JavaScript event listeners 
+                    handle form submission, check for empty required fields, and display error messages dynamically. The 
+                    character counter uses the <code>input</code> event to update remaining characters in real-time.
+                </p>
+
+                <p>
+                    The Team Page utilizes CSS transitions and hover effects to reveal hidden details, enhancing user 
+                    interface without complex JavaScript. The expandable card feature is achieved using 
+                    <code>max-height</code> transitions, providing a smooth animation when users interact with the cards.
+                </p>
+
+                <p>
+                    The Content Page demonstrates advanced CSS techniques including Flexbox layouts, alternating content 
+                    sections using <code>flex-direction: row-reverse</code>, and glassmorphism effects with 
+                    <code>backdrop-filter: blur()</code>. Internal anchor navigation provides seamless scrolling between 
+                    sections, improving user experience for longer content pages.
+                </p>
+
+                <p>
+                    The navigation system is consistent across all pages using <code>&lt;a href=""&gt;</code> links, with 
+                    active pages highlighted using <code>class="active"</code>. The "Top ↑" button implemented with 
+                    JavaScript provides convenient navigation back to the top of long pages.
+                </p>
+            </section>
+
+
+            <section id="challenges">
+                <h2>Challenges and Lessons Learned</h2>
+                <p>
+                    One of the main challenges was implementing the alternating layout for the Content Page sections while 
+                    ensuring responsiveness across different screen sizes. Using <code>flex-direction: row-reverse</code> 
+                    with media queries required careful testing to maintain proper layout on mobile devices. This taught me 
+                    the importance of planning responsive designs from the start.
+                </p>
+
+                <p>
+                    Another challenge was implementing the expandable details on the Team Page to be accessible for keyboard 
+                    users. Adding <code>tabindex="0"</code> and ensuring CSS transitions work properly on both hover and 
+                    focus states required careful testing and refinement.
+                </p>
+
+                <p>
+                    I also faced difficulties with form validation edge cases, such as handling empty submissions and resetting 
+                    the character counter correctly after form submission. Thorough testing and debugging helped resolve these 
+                    issues, improving my understanding of JavaScript event handling and DOM manipulation.
+                </p>
+
+                <p>
+                    Creating the internal navigation system for the Content Page with smooth scrolling and active section 
+                    highlighting was a valuable learning experience in implementing anchor-based navigation and scroll 
+                    event handling.
+                </p>
+
+                <p>
+                    Through this project, I significantly improved my front-end development skills, particularly in creating 
+                    interactive features, managing responsive layouts with Flexbox, implementing form validation, and ensuring 
+                    accessibility standards across all pages.
+                </p>
+            </section>
+
+            <section id="compliance">
+                <h2>Compliance</h2>
+
+                <p>
+                    This website was developed in accordance with the given coursework guidelines and requirements. All pages 
+                    follow a consistent structure, including a navigation bar, main content area, and footer, ensuring a 
+                    uniform user experience across the entire site.
+                </p>
+
+                <p>
+                    The design maintains accessibility standards by using clear fonts, readable text sizes, and sufficient 
+                    color contrast between text and background. All images include descriptive <code>alt</code> attributes 
+                    for screen reader compatibility, and semantic HTML elements provide proper document structure.
+                </p>
+
+                <p>
+                    All images used in the website are sourced from free and copyright-free platforms such as Unsplash and 
+                    Pexels, with proper references included. No copyrighted material has been used without permission.
+                </p>
+
+                <p>
+                    The website is fully responsive and designed using modern CSS techniques including Flexbox, CSS Grid, 
+                    and media queries, ensuring that content is displayed properly on different screen sizes from mobile 
+                    devices to desktop monitors.
+                </p>
+
+                <p>
+                    External files such as CSS and JavaScript have been properly linked, and the code is organized and 
+                    structured to improve readability and maintainability. Reusable components like headers and footers 
+                    are consistently used throughout the website.
+                </p>
+
+                <p>
+                    Overall, the website meets the required web development standards and follows best practices in design, 
+                    usability, accessibility, and content organization.
+                </p>
+            </section>
+
+            <section id="meeting-log">
+                <h2>Meeting Log</h2>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Number</th>
+                            <th>Date</th>
+                            <th>Format</th>
+                            <th>Discussion</th>
+                            <th>Attendance</th>
+                            <th>Tasks Assigned</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td class="date">2026-03-12</td>
+                            <td>Face-to-face</td>
+                            <td>Discussed project topic and selected "Life on Land" theme, assigned initial roles</td>
+                            <td>Attended</td>
+                            <td>Research content for wildlife conservation page and plan feedback page structure</td>
+                        </tr>
+
+                        <tr>
+                            <td>2</td>
+                            <td class="date">2026-03-14</td>
+                            <td>Face-to-face</td>
+                            <td>Planned layout and design for Feedback, Team, and Content pages, created wireframes</td>
+                            <td>Attended</td>
+                            <td>Start HTML/CSS for Feedback page with form validation and Content page with alternating sections</td>
+                        </tr>
+
+                        <tr>
+                            <td>3</td>
+                            <td class="date">2026-03-18</td>
+                            <td>Face-to-face</td>
+                            <td>Worked on content pages, reviewed feedback form and Content page structure</td>
+                            <td>Attended</td>
+                            <td>Implement character counter, form validation, and Content page with internal navigation</td>
+                        </tr>
+
+                        <tr>
+                            <td>4</td>
+                            <td class="date">2026-03-22</td>
+                            <td>Face-to-face</td>
+                            <td>Implemented interactivity, tested pages across different devices</td>
+                            <td>Attended</td>
+                            <td>Debug errors, refine team card hover effects, improve responsiveness for Content page</td>
+                        </tr>
+
+                        <tr>
+                            <td>5</td>
+                            <td class="date">2026-03-27</td>
+                            <td>Face-to-face</td>
+                            <td>Final review, cross-page consistency checks, and improvements</td>
+                            <td>Attended</td>
+                            <td>Complete Page Editor documentation, add validation links, final submission prep</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+
+            <section id="references">
+                <h2>References</h2>
+                <ul class="ref">
+                    <li>MDN Web Docs - HTML & CSS: https://developer.mozilla.org/</li>
+                    <li>W3Schools JavaScript Form Validation: https://www.w3schools.com/js/js_validation.asp</li>
+                    <li>Free image resources - Unsplash: https://unsplash.com/</li>
+                    <li>CSS-Tricks - Flexbox & Grid Guides: https://css-tricks.com/</li>
+                    <li>Wildlife conservation information: WWF, IUCN Red List, UNEP Reports</li>
+                </ul>
+            </section>
+
+        </main>
+
+        <!-- LEFT SIDE NAV -->
+        <aside>
+            <div class="aside-inner">
+                <h3 class="con">Contents</h3>
+                <ul>
+                    <li><a href="#feedback">Feedback Page</a></li>
+                    <li><a href="#team">Team Page</a></li>
+                    <li><a href="#content-page">Content Page</a></li>
+                    <li><a href="#technical-description">Technical Description</a></li>
+                    <li><a href="#challenges">Challenges & Lessons</a></li>
+                    <li><a href="#compliance">Compliance</a></li>
+                    <li><a href="#meeting-log">Meeting Log Table</a></li>
+                    <li><a href="#references">References</a></li>
+                </ul>
+            </div>
+            
+        </aside>
+    </div>
+
+<a href="#top" class="top-btn">Top ↑</a>
+<footer>
+    <div class="footer-left">
+        <h2 class="footer-logo">Land Verse</h2>
+        <p class="footer-mission">Protecting life on land and shaping a sustainable future for generations to come.</p>
+    </div>
+
+    <div class="footer-middle2">
+        <h3 class="footer-topic">contact</h3>
+        <a href="mailto:kaveeshathejan2@gmail.com">Kaveesha<span class="symbol">: </span>kaveeshathejan2@gmail.com</a>
+        <a href="mailto:Sanukaramasinghe8@gmail.com">Sanuka<span class="symbol">: </span>Sanukaramasinghe8@gmail.com</a>
+        <a href="mailto:lakvindumenath87@gmail.com">Lakvindu<span class="symbol">: </span>lakvindumenath87@gmail.com</a>
+        <a href="mailto:thenujaganganath23@gmail.com">Thenuja<span class="symbol">: </span>thenujaganganath23@gmail.com</a>
+    </div>
+
+    <div class="footer-middle">
+        <h3 class="footer-topic">Editors</h3>
+        <a href="editorst1.html">Student 1</a>
+        <a href="editorst2.html">Student 2</a>
+        <a href="pageeditor_ST3.html" class="active">Student 3</a>
+        <a href="editorst4.html">Student 4</a>
+    </div>
+
+    
+
+    <div class="footer-right">
+        <h3 class="footer-topic">Pages</h3>
+        <a href="home.html">Home Page</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="action_impact_simulator.html">Action Impact</a>
+        <a href="feedback.html">Feedback</a>
+        <a href="team.html">Team</a>
+        <a href="sitemap.html">Sitemap</a>
+        <a href="user_profile.html">User Profile</a>
+    </div>
+</footer>
+<script src="global.js"></script>
+</body>
+</html>

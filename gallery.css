@@ -146,3 +146,32 @@ body {
 #modalDesc {
     font-size: 14px;
 }
+
+label {
+    font-family: 'f1';
+    letter-spacing: 2px;
+    font-size: 14px;
+}
+
+span {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+#textControls {
+    margin-top: 15px;
+    display: none;
+    margin-top: 20px;
+}
+
+#textControls label {
+    margin-right: 10px;
+}
+
+#textControls input,
+#textControls select {
+    margin-right: 20px;
+    padding: 5px;
+    border-radius: 6px;
+    border: none;
+}

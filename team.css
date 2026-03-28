@@ -13,6 +13,8 @@ main {
     gap: 30px;
     margin-top: 100px;
     margin-bottom: 100px;
+
+    align-items: flex-start; 
 }
 
 .team-card {
@@ -27,6 +29,7 @@ main {
     outline: none;
 }
 
+<<<<<<< Updated upstream
 .card1,
 .card2,
 .card3,
@@ -39,6 +42,9 @@ main {
 .card2:hover,
 .card3:hover,
 .card4:hover{
+=======
+.team-card:hover {
+>>>>>>> Stashed changes
     transform: translateY(-10px);
     box-shadow: 0 10px 30px rgba(255, 255, 255, 0.255);
 }
@@ -52,7 +58,6 @@ main {
     display: block;
     margin-bottom: 20px;
 }
-
 
 .team-name {
     font-family: 'f1';
@@ -82,21 +87,19 @@ main {
 .team-card .details {
     background: #1b1b1b;
     max-height: 0;
-    overflow:hidden;
-    transition: max-height 0.5s ease, padding 0.6s ease;
+    overflow: hidden;
+    transition: max-height 0.5s ease, padding 0.4s ease;
     padding: 0 10px;
     font-size: 14px;
 }
 
 .team-card:hover .details,
 .team-card:focus .details {
-    max-height: 280px;
+    max-height: 400px; 
     padding: 10px;
 }
-
 
 .team-card .details p {
     text-align: center;
     color: white;
 }
-

@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Page Editor - Student 4</title>
+    <title>Page Editor - Student 2</title>
     <link rel="stylesheet" href="editor.css">
 </head>
 
@@ -32,7 +32,7 @@
     </header>
 
 
-    <h1>Page Editor</h1>
+    <h2 class="page-header">Page Editor</h2>
     <p class="st-name">Thenuja Vilothmin (Student 4)</p>
 
     <div class="container">
@@ -84,7 +84,7 @@
             </section>
 
 
-            <section id="user_profile">
+            <section id="user-profile">
                 <h2>User Profile Page</h2>
 
                 <p>
@@ -128,6 +128,66 @@
                 <a href="user_profile.html">Go to User Profile Page</a>
                 <br>
                 <br>
+                <p class="button-label">Go to Validation Page</p>
+                <a href="validationst4.html">Go to Validation Page</a>
+            </section>
+
+            <section id="content">
+                <h2>Content Page – Restoring Soil Health</h2>
+
+                <p>
+                    The Content Page titled "Restoring Soil Health" focuses on raising awareness about the importance
+                    of maintaining healthy soil and promoting sustainable land management practices. The page is
+                    structured using semantic HTML elements such as <code>&lt;main&gt;</code>,
+                    <code>&lt;section&gt;</code>, and <code>&lt;h1&gt;</code>.
+                </p>
+
+                <p>
+                    The layout is divided into multiple sections using
+                    <code>&lt;section id=""&gt;</code> elements, covering topics such as soil importance,
+                    biodiversity, threats, climate impact, restoration methods, and solutions.
+                </p>
+
+                <p>
+                    Each section uses a split layout with
+                    <code>&lt;div class="text"&gt;</code> and <code>&lt;div class="image"&gt;</code>.
+                    This improves readability and keeps the design visually balanced.
+                </p>
+
+                <p>
+                    Alternating layouts are created using
+                    <code>class="content-section reverse"</code>, which applies
+                    <code>flex-direction: row-reverse;</code> in CSS to avoid repetition.
+                </p>
+
+                <p>
+                    Internal navigation is implemented using
+                    <code>&lt;div class="internal-nav"&gt;</code> with anchor links for easy section access.
+                </p>
+
+                <p>
+                    Interactive effects such as hover zoom on images (<code>transform: scale()</code>) and
+                    card lift animations (<code>transform: translateY()</code>) enhance user experience.
+                </p>
+
+                <p>
+                    The page is styled using external CSS files (<code>global.css</code>,
+                    <code>content.css</code>) and uses Flexbox for responsive layout design.
+                </p>
+
+                <p>
+                    Navigation to this page is implemented using
+                    <code>&lt;a href="content_ST4.html"&gt;</code>.
+                </p>
+
+                <p>
+                    Overall, the page combines structured HTML, CSS styling, and interactive elements
+                    to create an engaging and informative user experience.
+                </p>
+
+                <p class="button-label">Go to Content page</p>
+                <a href="content_ST4.html">Go to Content Page</a>
+                <br><br>
                 <p class="button-label">Go to Validation Page</p>
                 <a href="validationst4.html">Go to Validation Page</a>
             </section>
@@ -266,7 +326,7 @@
 
                         <tr>
                             <td>2</td>
-                            <td class="date">2026-03-16</td>
+                            <td class="date">2026-03-14</td>
                             <td>Face-to-face</td>
                             <td>Planned layout and design for Home and Gallery pages</td>
                             <td>Attended</td>
@@ -276,7 +336,7 @@
                         <tr>
                             <td>3</td>
                             <td class="date">2026-03-18</td>
-                            <td>Online</td>
+                            <td>Face-to-face</td>
                             <td>Worked on content pages and styling</td>
                             <td>Attended</td>
                             <td>Completed Content Page and added images</td>
@@ -284,7 +344,7 @@
 
                         <tr>
                             <td>4</td>
-                            <td class="date">2026-03-23</td>
+                            <td class="date">2026-03-22</td>
                             <td>Face-to-face</td>
                             <td>Implemented interactivity and tested pages</td>
                             <td>Attended</td>
@@ -295,18 +355,9 @@
                             <td>5</td>
                             <td class="date">2026-03-27</td>
                             <td>Face-to-face</td>
-                            <td>Reviewed and improvements</td>
-                            <td>Attended</td>
-                            <td>Completed Page Editor and Validation Page</td>
-                        </tr>
-
-                        <tr>
-                            <td>6</td>
-                            <td class="date">2026-03-29</td>
-                            <td>Online</td>
                             <td>Final review and improvements</td>
                             <td>Attended</td>
-                            <td>Finalized and Submission</td>
+                            <td>Completed Page Editor and final submission</td>
                         </tr>
                     </tbody>
                 </table>
@@ -332,6 +383,7 @@
                 <ul>
                     <li><a href="#sitemap">Sitemap Page</a></li>
                     <li><a href="#user-profile">User Profile Page</a></li>
+                    <li><a href="#content">Content Page – Restoring Soil Health</a></li>
                     <li><a href="#technical-description">Technical Description</a></li>
                     <li><a href="#challenges">Challenges & Lessons</a></li>
                     <li><a href="#compliance">Compliance</a></li>

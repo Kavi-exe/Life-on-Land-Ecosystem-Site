@@ -2,10 +2,6 @@ body{
     margin-top: 100px;
 }
 
-main {
-    height: 940px;
-}
-
 .team-container {
     display: flex;
     flex-wrap: wrap;
@@ -25,31 +21,15 @@ main {
     border-radius: 10px;
     overflow: hidden;
     cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
     text-align: center;
     outline: none;
 }
 
-<<<<<<< Updated upstream
-.card1,
-.card2,
-.card3,
-.card4 {
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    border-radius: 10px;
-}
-
-.card1:hover,
-.card2:hover,
-.card3:hover,
-.card4:hover{
-=======
 .team-card:hover {
->>>>>>> Stashed changes
     transform: translateY(-10px);
     box-shadow: 0 10px 30px rgba(255, 255, 255, 0.255);
 }
-
-
 
 .team-card img {
     width: 280px;
@@ -61,7 +41,6 @@ main {
 
 .team-name {
     font-family: 'f1';
-    letter-spacing: 2px;
     font-size: 30px;
     color: white;
     margin-bottom: 5px;
@@ -92,6 +71,7 @@ main {
     padding: 0 10px;
     font-size: 14px;
 }
+
 
 .team-card:hover .details,
 .team-card:focus .details {

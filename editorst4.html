@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Page Editor - Student 2</title>
+    <link rel="stylesheet" href="editor.css">
+</head>
+
+<body id="top">
+
+    <header>
+
+        <div class="left-part">
+            <h1 class="nav_logo">Land Verse</h1>
+        </div>
+
+        <div class="right-part">
+            <nav>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="action_impact_simulator.html">Action Impact</a></li>
+                    <li><a href="feedback.html">Feedback</a></li>
+                    <li><a href="team.html">Team</a></li>
+                    <li><a href="sitemap.html">Sitemap</a></li>
+                    <li><a href="user_profile.html">User Profile</a></li>
+                </ul>
+            </nav>
+        </div>
+
+    </header>
+
+
+    <h2 class="page-header">Page Editor</h2>
+    <p class="st-name">Thenuja Vilothmin (Student 4)</p>
+
+    <div class="container">
+
+        <!-- RIGHT SIDE CONTENT -->
+        <main>
+
+            <section id="sitemap">
+                <h2>Sitemap Page</h2>
+
+                <p>
+                    The Sitemap Page provides a visual overview of the website's structure and hierarchy,
+                    helping users easily navigate the "Life on Land" project. The structure is built using
+                    semantic HTML elements such as <code>&lt;header&gt;</code>, <code>&lt;main&gt;</code>,
+                    and <code>&lt;section&gt;</code> to organize content clearly.
+                </p>
+
+                <p>
+                    A standout feature is the interactive and responsive visual map, implemented using the
+                    <code>&lt;svg viewBox="..."&gt;</code> element to define scalable vector graphics.
+                </p>
+
+                <p>
+                    Inside the SVG, navigation paths between the nodes are drawn using
+                    <code>&lt;path class="link-line" d="..."&gt;</code> elements, creating a clear
+                    tree structure that outlines the connections between parent pages and their subpages.
+                </p>
+
+                <p>
+                    The interactive clickable nodes in the sitemap are constructed using SVG elements:
+                    <code>&lt;rect&gt;</code> for the button shapes and <code>&lt;text&gt;</code> for
+                    the labels. These elements are wrapped inside <code>&lt;a href="..." class="node-group"&gt;</code>
+                    tags, ensuring that clicking on any node safely redirects the user to the respective page
+                    like Home, Gallery, Feedback, or Validation.
+                </p>
+
+                <p>
+                    To ensure inclusivity and adherence to accessibility standards, the SVG container and
+                    the link tags utilize <code>role="navigation"</code> and <code>aria-label="..."</code> attributes,
+                    providing clear context to screen readers.
+                </p>
+
+                <p class="button-label">Go to Sitemap page</p>
+                <a href="sitemap.html">Go to Sitemap Page</a>
+                <br>
+                <br>
+                <p class="button-label">Go to Validation Page</p>
+                <a href="validationst4.html">Go to Validation Page</a>
+            </section>
+
+
+            <section id="user-profile">
+                <h2>User Profile Page</h2>
+
+                <p>
+                    The User Profile Page allows visitors to create a personalized profile indicating
+                    their engagement and interests related to "Life on Land" conservation. Its structure
+                    relies on HTML and heavily utilizes JavaScript for collecting and displaying dynamic data.
+                </p>
+
+                <p>
+                    The layout implements a progressive reveal design. A hidden progress tracker is created
+                    using an inline <code>style="display: none;"</code> on the
+                    <code>&lt;div id="progress-wrapper"&gt;</code> element. It encloses a
+                    <code>&lt;div class="progress-bar"&gt;</code> to visually indicate the profile completion
+                    status based on user input.
+                </p>
+
+                <p>
+                    Instead of a traditional form, data collection relies on JavaScript prompts to achieve an
+                    interactive step-by-step experience. Action buttons like 'Start Profile Building' and
+                    'Reset Profile' are mapped to JavaScript logic via the <code>onclick</code> attribute
+                    (e.g., <code>onclick="startProfileBuilding()"</code>).
+                </p>
+
+                <p>
+                    When logic executes in JavaScript, responses are collected and DOM manipulation occurs immediately.
+                    The script maps answers via document elements like
+                    <code>document.getElementById("out-name").textContent</code>,
+                    allowing the profile summary (built with headings and spans) to reflect inputs in real time.
+                </p>
+
+                <p>
+                    Advanced logic tracks the percentage of completion. By storing prompt responses in arrays and
+                    checking variable states, the page allows users to skip questions, updates the progress bar
+                    visually,
+                    temporarily hides answered fields, permits resuming skipped steps securely via the
+                    <code>resumeSkippedSteps()</code> function, and can wipe all data clear dynamically using
+                    the <code>resetProfile()</code> function.
+                </p>
+
+                <p class="button-label">Go to User Profile page</p>
+                <a href="user_profile.html">Go to User Profile Page</a>
+                <br>
+                <br>
+                <p class="button-label">Go to Validation Page</p>
+                <a href="validationst4.html">Go to Validation Page</a>
+            </section>
+
+            <section id="technical-description">
+                <h2>Technical Description</h2>
+
+                <p>
+                    The website was developed using HTML for structure, CSS for styling, and
+                    JavaScript for interactivity. For example, structural elements such as
+                    <code>&lt;header&gt;</code>, <code>&lt;main&gt;</code>,
+                    <code>&lt;section&gt;</code>, and <code>&lt;footer&gt;</code> are used
+                    to organize the layout. External CSS files like <code>global.css</code>,
+                    <code>sitemap.css</code>, and <code>user_profile.css</code> are linked using the
+                    <code>&lt;link&gt;</code> tag to maintain consistency and improve code organization.
+                </p>
+
+                <p>
+                    Flexbox was used for layout design using properties such as
+                    <code>display: flex;</code>, <code>justify-content</code>, and
+                    <code>align-items</code>. For example, navigation menus are structured using
+                    <code>&lt;nav&gt;</code>, <code>&lt;ul&gt;</code>, and
+                    <code>&lt;li&gt;</code> tags, and styled with Flexbox to align items properly.
+                    This allows the layout to adjust responsively across different screen sizes.
+                </p>
+
+                <p>
+                    The Sitemap Page uses SVG graphics specifically styled to maintain aspect ratios using
+                    a coordinate system <code>viewBox="0 0 1000 600"</code> allowing vectors to be naturally scalable.
+                    The User Profile Page uses fundamental Vanilla JavaScript methods to orchestrate user flows, handle
+                    display states dynamically between <code>block</code> or <code>none</code>, calculate percentage
+                    formulations mathematically, and
+                    update inner DOM elements without requesting server refreshes.
+                </p>
+
+                <p>
+                    The navigation system is consistent across all pages using
+                    <code>&lt;a href=""&gt;</code> links. The active page is highlighted using
+                    a class such as <code>class="active"</code>. Reusable components like
+                    headers and footers are implemented using <code>&lt;header&gt;</code>
+                    and <code>&lt;footer&gt;</code> tags, ensuring a uniform design throughout
+                    the website.
+                </p>
+            </section>
+
+
+            <section id="challenges">
+                <h2>Challenges and Lessons Learned</h2>
+                <p>
+                    One of the main challenges was drawing and calculating precise paths between nodes
+                    in the SVG coordinate system for the Sitemap. It took multiple iterations to align visually
+                    pleasing <code>&lt;path&gt;</code> markers with <code>&lt;rect&gt;</code> node origins correctly.
+                </p>
+
+                <p>
+                    Another significant hurdle was structuring the modular logic inside the User Profile.
+                    Building a progressive step tracker relying sequentially on prompt loops meant carefully managing
+                    scope and correctly addressing skipped inputs rather than crashing or skipping the validation checks
+                    completely.
+                </p>
+
+                <p>
+                    I also faced difficulties with making SVG responsive and text easily readable across screens, solved
+                    by removing absolute sizing and relying strictly on <code>viewBox</code> parameters.
+                </p>
+
+                <p>
+                    Through this project iteration, I learned considerable detail about Scalable Vector Graphics
+                    formatting within HTML
+                    and expanded my JavaScript DOM interaction abilities remarkably.
+                </p>
+            </section>
+
+            <section id="compliance">
+                <h2>Compliance</h2>
+
+                <p>
+                    This website was developed in accordance with the given coursework guidelines and
+                    requirements. All pages follow a consistent structure, including a navigation bar,
+                    main content area, and footer, ensuring a uniform user experience across the site.
+                </p>
+
+                <p>
+                    The design maintains accessibility by using clear fonts, readable text sizes, and
+                    sufficient color contrast between text and background. Navigation is simple and
+                    intuitive, allowing users to easily move between pages using the menu and internal links.
+                </p>
+
+                <p>
+                    All images used in the website are sourced from free and copyright-free platforms,
+                    and proper references have been included where necessary. No copyrighted material
+                    has been used without permission.
+                </p>
+
+                <p>
+                    The website is responsive and designed using modern CSS techniques such as Flexbox,
+                    ensuring that content is displayed properly on different screen sizes and devices.
+                </p>
+
+                <p>
+                    External files such as CSS and JavaScript have been properly linked, and the code is
+                    organized and structured to improve readability and maintainability. Reusable components
+                    like headers and footers are consistently used throughout the website.
+                </p>
+
+                <p>
+                    Overall, the website meets the required web development standards and follows best
+                    practices in design, usability, and content organization.
+                </p>
+            </section>
+
+            <section id="meeting-log">
+                <h2>Meeting Log</h2>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Number</th>
+                            <th>Date</th>
+                            <th>Format</th>
+                            <th>Discussion</th>
+                            <th>Attendance</th>
+                            <th>Tasks Assigned</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td class="date">2026-03-12</td>
+                            <td>Face-to-face</td>
+                            <td>Discussed project topic and selected "Life on Land" theme</td>
+                            <td>Attended</td>
+                            <td>Each member assigned a page to develop</td>
+                        </tr>
+
+                        <tr>
+                            <td>2</td>
+                            <td class="date">2026-03-14</td>
+                            <td>Face-to-face</td>
+                            <td>Planned layout and design for Home and Gallery pages</td>
+                            <td>Attended</td>
+                            <td>Started designing Home Page and Gallery Page</td>
+                        </tr>
+
+                        <tr>
+                            <td>3</td>
+                            <td class="date">2026-03-18</td>
+                            <td>Face-to-face</td>
+                            <td>Worked on content pages and styling</td>
+                            <td>Attended</td>
+                            <td>Completed Content Page and added images</td>
+                        </tr>
+
+                        <tr>
+                            <td>4</td>
+                            <td class="date">2026-03-22</td>
+                            <td>Face-to-face</td>
+                            <td>Implemented interactivity and tested pages</td>
+                            <td>Attended</td>
+                            <td>Debugged errors and improved responsiveness</td>
+                        </tr>
+
+                        <tr>
+                            <td>5</td>
+                            <td class="date">2026-03-27</td>
+                            <td>Face-to-face</td>
+                            <td>Final review and improvements</td>
+                            <td>Attended</td>
+                            <td>Completed Page Editor and final submission</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+
+            <section id="references">
+                <h2>References</h2>
+                <ul class="ref">
+                    <li>W3Schools HTML - https://www.w3schools.com/html/</li>
+                    <li>W3Schools CSS - https://www.w3schools.com/css/</li>
+                    <li>MDN SVG Graphics - https://developer.mozilla.org/en-US/docs/Web/SVG</li>
+                    <li>W3Schools JavaScript JS - https://www.w3schools.com/js/</li>
+                </ul>
+            </section>
+
+        </main>
+
+        <!-- LEFT SIDE NAV -->
+        <aside>
+            <div class="aside-inner">
+                <h3 class="con">Contents</h3>
+                <ul>
+                    <li><a href="#sitemap">Sitemap Page</a></li>
+                    <li><a href="#user-profile">User Profile Page</a></li>
+                    <li><a href="#technical-description">Technical Description</a></li>
+                    <li><a href="#challenges">Challenges & Lessons</a></li>
+                    <li><a href="#compliance">Compliance</a></li>
+                    <li><a href="#meeting-log">Meeting Log Table</a></li>
+                    <li><a href="#references">References</a></li>
+                </ul>
+            </div>
+
+        </aside>
+    </div>
+
+    <a href="#top" class="top-btn">Top ↑</a>
+    <footer>
+        <div class="footer-left">
+            <h2 class="footer-logo">Land Verse</h2>
+            <p class="footer-mission">Protecting life on land and shaping a sustainable future for generations to come.
+            </p>
+        </div>
+
+        <div class="footer-middle2">
+            <h3 class="footer-topic">contact</h3>
+            <a href="mailto:kaveeshathejan2@gmail.com">Kaveesha<span class="symbol">:
+                </span>kaveeshathejan2@gmail.com</a>
+            <a href="mailto:Sanukaramasinghe8@gmail.com">Sanuka<span class="symbol">:
+                </span>Sanukaramasinghe8@gmail.com</a>
+            <a href="mailto:lakvindumenath87@gmail.com">Lakvindu<span class="symbol">:
+                </span>lakvindumenath87@gmail.com</a>
+            <a href="mailto:thenujaganganath23@gmail.com">Thenuja<span class="symbol">:
+                </span>thenujaganganath23@gmail.com</a>
+        </div>
+
+        <div class="footer-middle">
+            <h3 class="footer-topic">Editors</h3>
+            <a href="editorst1.html">Student 1</a>
+            <a href="gallery.html">Student 2</a>
+            <a href="editorst3.html">Student 3</a>
+            <a href="feedback.html">Student 4</a>
+        </div>
+
+
+
+        <div class="footer-right">
+            <h3 class="footer-topic">Pages</h3>
+            <a href="home.html">Home Page</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="action_impact_simulator.html">Action Impact</a>
+            <a href="feedback.html">Feedback</a>
+            <a href="team.html">Team</a>
+            <a href="sitemap.html">Sitemap</a>
+            <a href="user_profile.html">User Profile</a>
+        </div>
+    </footer>
+    <script src="global.js"></script>
+</body>
+
+</html>

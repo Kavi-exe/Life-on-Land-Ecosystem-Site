@@ -14,17 +14,17 @@
         <div class="left-part">
             <h1 class="nav_logo">Land Verse</h1>
         </div>
-        
+
         <div class="right-part">
             <nav>
                 <ul>
-                    <li><a href = "home.html">Home</a></li>
-                    <li><a href = "gallery.html">Gallery</a></li>
-                    <li><a href = "action_impact_simulator.html">Action Impact</a></li>
-                    <li><a href = "feedback.html">Feedback</a></li>
-                    <li><a href = "team.html">Team</a></li>
-                    <li><a href = "sitemap.html">Sitemap</a></li>
-                    <li><a href = "user_profile.html" class="active">User Profile</a></li>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="action_impact_simulator.html">Action Impact</a></li>
+                    <li><a href="feedback.html">Feedback</a></li>
+                    <li><a href="team.html">Team</a></li>
+                    <li><a href="sitemap.html">Sitemap</a></li>
+                    <li><a href="user_profile.html" class="active">User Profile</a></li>
                 </ul>
             </nav>
         </div>
@@ -32,8 +32,9 @@
 
     <main>
         <section class="profile-container">
-            <h1 class="class_name">Create Your Profile</h1>
-            <p class="note">Tell us more about yourself and your connection to Life on Land conservation. Follow the prompts to build
+            <h2 class="class_name">Create Your Profile</h2>
+            <p class="note">Tell us more about yourself and your connection to Life on Land conservation. Follow the
+                prompts to build
                 your profile.</p>
 
             <div class="progress-wrapper" style="display: none;" id="progress-wrapper">
@@ -46,7 +47,9 @@
             <div class="btn-container">
                 <button id="start-btn" class="btn" onclick="startProfileBuilding()">Start Profile Building</button>
                 <button id="resume-btn" class="btn" style="display: none;" onclick="resumeSkippedSteps()">Complete
-                Skipped Steps</button>
+                    Skipped Steps</button>
+                <button id="reset-btn" class="btn" style="display: none;" onclick="resetProfile()">Reset
+                    Profile</button>
             </div>
 
             <div class="profile-output" id="profile-output">
@@ -62,60 +65,69 @@
                 <div class="profile-section" id="section-2">
                     <h3 class="topic">Step 2<span>: </span> Interests & Preferences</h3>
                     <p id="p-animal"><strong>Favorite Animal<span>: </span></strong> <span id="out-animal"></span></p>
-                    <p id="p-habitat"><strong>Preferred Habitat<span>: </span></strong> <span id="out-habitat"></span></p>
+                    <p id="p-habitat"><strong>Preferred Habitat<span>: </span></strong> <span id="out-habitat"></span>
+                    </p>
                     <p id="p-topic"><strong>Conservation Focus<span>: </span></strong> <span id="out-topic"></span></p>
                 </div>
 
                 <div class="profile-section" id="section-3">
                     <h3 class="topic">Step 3<span>: </span> Actions & Goals</h3>
-                    <p id="p-action"><strong>Recent Action Taken<span>: </span></strong> <span id="out-action"></span></p>
+                    <p id="p-action"><strong>Recent Action Taken<span>: </span></strong> <span id="out-action"></span>
+                    </p>
                     <p id="p-goal"><strong>Conservation Goal<span>: </span></strong> <span id="out-goal"></span></p>
-                    <p id="p-volunteer"><strong>Volunteer Interest<span>: </span></strong> <span id="out-volunteer"></span></p>
+                    <p id="p-volunteer"><strong>Volunteer Interest<span>: </span></strong> <span
+                            id="out-volunteer"></span></p>
                 </div>
             </div>
         </section>
     </main>
 
-    
 
-<a href="#top" class="top-btn">Top ↑</a>
-<footer>
-    <div class="footer-left">
-        <h2 class="footer-logo">Land Verse</h2>
-        <p class="footer-mission">Protecting life on land and shaping a sustainable future for generations to come.</p>
-    </div>
 
-    <div class="footer-middle2">
-        <h3 class="footer-topic">contact</h3>
-        <a href="mailto:kaveeshathejan2@gmail.com">Kaveesha<span class="symbol">: </span>kaveeshathejan2@gmail.com</a>
-        <a href="mailto:Sanukaramasinghe8@gmail.com">Sanuka<span class="symbol">: </span>Sanukaramasinghe8@gmail.com</a>
-        <a href="mailto:lakvindumenath87@gmail.com">Lakvindu<span class="symbol">: </span>lakvindumenath87@gmail.com</a>
-        <a href="mailto:thenujaganganath23@gmail.com">Thenuja<span class="symbol">: </span>thenujaganganath23@gmail.com</a>
-    </div>
+    <a href="#top" class="top-btn">Top ↑</a>
+    <footer>
+        <div class="footer-left">
+            <h2 class="footer-logo">Land Verse</h2>
+            <p class="footer-mission">Protecting life on land and shaping a sustainable future for generations to come.
+            </p>
+        </div>
 
-    <div class="footer-middle">
-        <h3 class="footer-topic">Editors</h3>
-        <a href="editorst1.html">Student 1</a>
-        <a href="editorst2.html">Student 2</a>
-        <a href="editorst3.html">Student 3</a>
-        <a href="editorst4.html">Student 4</a>
-    </div>
+        <div class="footer-middle2">
+            <h3 class="footer-topic">contact</h3>
+            <a href="mailto:kaveeshathejan2@gmail.com">Kaveesha<span class="symbol">:
+                </span>kaveeshathejan2@gmail.com</a>
+            <a href="mailto:Sanukaramasinghe8@gmail.com">Sanuka<span class="symbol">:
+                </span>Sanukaramasinghe8@gmail.com</a>
+            <a href="mailto:lakvindumenath87@gmail.com">Lakvindu<span class="symbol">:
+                </span>lakvindumenath87@gmail.com</a>
+            <a href="mailto:thenujaganganath23@gmail.com">Thenuja<span class="symbol">:
+                </span>thenujaganganath23@gmail.com</a>
+        </div>
 
-    
+        <div class="footer-middle">
+            <h3 class="footer-topic">Editors</h3>
+            <a href="editorst1.html">Student 1</a>
+            <a href="gallery.html">Student 2</a>
+            <a href="editorst3.html">Student 3</a>
+            <a href="feedback.html">Student 4</a>
+        </div>
 
-    <div class="footer-right">
-        <h3 class="footer-topic">Pages</h3>
-        <a href="home.html">Home Page</a>
-        <a href="gallery.html">Gallery</a>
-        <a href="action_impact_simulator.html">Action Imapct</a>
-        <a href="feedback.html">Feedback</a>
-        <a href="team.html">Team</a>
-        <a href="sitemap.html">Sitemap</a>
-        <a href="user_profile.html">User Profile</a>
-    </div>
-</footer>
 
-<script src="user_profile.js"></script>
-<script src="global.js"></script>
+
+        <div class="footer-right">
+            <h3 class="footer-topic">Pages</h3>
+            <a href="home.html">Home Page</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="action_impact_simulator.html">Action Imapct</a>
+            <a href="feedback.html">Feedback</a>
+            <a href="team.html">Team</a>
+            <a href="sitemap.html">Sitemap</a>
+            <a href="user_profile.html">User Profile</a>
+        </div>
+    </footer>
+
+    <script src="user_profile.js"></script>
+    <script src="global.js"></script>
 </body>
+
 </html>

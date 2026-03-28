@@ -15,7 +15,7 @@ body{
     position: relative;
     background: #1b1b1b;
     width: 280px;
-    height: 800px;
+    max-height: 800px;
     border-radius: 10px;
     overflow: hidden;
     cursor: pointer;

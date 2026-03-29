@@ -29,6 +29,7 @@ body {
 
 .img-box {
     position: relative;
+    cursor: pointer;
 }
 
 
